@@ -22,7 +22,7 @@ import {
   CheckCircleOutlined,
   CloseCircleOutlined
 } from '@ant-design/icons';
-import axios from 'axios';
+import axiosInstance from '../../../utils/axiosConfig';
 import DoctorLayout from '../../../components/doctor/Layout';
 import './Dashboard.css';
 
@@ -54,7 +54,7 @@ const DoctorDashboard = () => {
       setError(null);
       
       console.log('Fetching dashboard data...');
-      const response = await axios.get('http://localhost:8080/api/v1/doctor/dashboard', {
+      const response = await axiosInstance.get('/api/v1/doctor/dashboard', {
         headers: {
           Authorization: `Bearer ${localStorage.getItem('token')}`
         }
