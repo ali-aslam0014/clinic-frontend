@@ -4,6 +4,7 @@ import axios from 'axios';
 import './AdminLogin.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { setCredentials } from '../../redux/features/authSlice';
+import axiosInstance from '../../utils/axiosConfig';
 
 const AdminLogin = () => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const AdminLogin = () => {
     try {
       localStorage.clear();
 
-      const response = await axios.post('/api/v1/user/admin/login', {
+      const response = await axiosInstance.post('/api/v1/user/admin/login', {
         email: formData.email,
         password: formData.password
       });
