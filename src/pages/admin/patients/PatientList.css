@@ -1,0 +1,47 @@
+.patient-list-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.patient-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.patient-list-header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 24px;
+}
+
+.patient-details {
+  padding: 20px;
+}
+
+.patient-info,
+.emergency-contact,
+.medical-info {
+  margin-bottom: 24px;
+}
+
+.patient-info h3,
+.emergency-contact h3,
+.medical-info h3 {
+  color: #1a237e;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #e8eaf6;
+  padding-bottom: 8px;
+}
+
+.patient-details p {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.patient-details strong {
+  color: #333;
+  margin-right: 8px;
+}

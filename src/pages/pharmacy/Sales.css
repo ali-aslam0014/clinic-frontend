@@ -1,0 +1,197 @@
+/* Card Styling */
+.sales-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sales-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+  background: #fafafa;
+  border-radius: 8px 8px 0 0;
+}
+
+.sales-card .ant-card-head-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Table Styling */
+.sales-table {
+  margin-top: 16px;
+}
+
+.sales-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.sales-table .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+/* Status Tag Styling */
+.status-tag {
+  min-width: 90px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* New Sale Modal */
+.sale-modal {
+  min-width: 800px;
+}
+
+.sale-modal .ant-modal-body {
+  padding: 24px;
+}
+
+/* Selected Items Table */
+.selected-items-table {
+  margin: 16px 0;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+}
+
+.selected-items-table .ant-table-thead > tr > th {
+  background: #fafafa;
+}
+
+/* Form Styling */
+.sale-form .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.sale-form .ant-input-number {
+  width: 100%;
+}
+
+/* Summary Section */
+.sale-summary {
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.sale-summary .total-amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
+
+.action-buttons .ant-btn {
+  min-width: 100px;
+}
+
+/* Print Button */
+.print-button {
+  color: #1890ff;
+}
+
+.print-button:hover {
+  color: #40a9ff;
+}
+
+/* Cancel Button */
+.cancel-button {
+  color: #ff4d4f;
+}
+
+.cancel-button:hover {
+  color: #ff7875;
+}
+
+/* Medicine Selection */
+.medicine-select {
+  width: 100%;
+}
+
+.medicine-select .ant-select-selection-placeholder {
+  color: #bfbfbf;
+}
+
+/* Quantity Input */
+.quantity-input {
+  width: 80px !important;
+}
+
+/* Price Display */
+.price-display {
+  font-family: 'Roboto Mono', monospace;
+  text-align: right;
+}
+
+/* Patient Info Section */
+.patient-info {
+  background: #f8f8f8;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Payment Section */
+.payment-section {
+  border-top: 1px solid #f0f0f0;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .sale-modal {
+    min-width: 100%;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons .ant-btn {
+    width: 100%;
+  }
+
+  .quantity-input {
+    width: 100% !important;
+  }
+}
+
+/* Loading States */
+.loading-spinner {
+  margin: 20px 0;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+/* Empty State */
+.empty-state {
+  padding: 48px 0;
+  text-align: center;
+}
+
+/* Invoice Number */
+.invoice-number {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+}
+
+/* Date Column */
+.date-column {
+  white-space: nowrap;
+}
+
+/* Amount Column */
+.amount-column {
+  font-family: 'Roboto Mono', monospace;
+  text-align: right;
+} 

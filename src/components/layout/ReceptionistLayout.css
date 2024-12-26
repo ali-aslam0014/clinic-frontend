@@ -1,0 +1,138 @@
+.layout-container {
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.site-header {
+  position: sticky !important;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  width: 100% !important;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-right: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.trigger {
+  padding: 0 24px;
+  font-size: 18px;
+  line-height: 64px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+/* User Profile Styles */
+.user-profile-trigger {
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.user-profile-trigger:hover {
+  background-color: rgba(0,0,0,0.025);
+}
+
+.username {
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* Sidebar Styles */
+.site-layout {
+  transition: margin-left 0.2s;
+  width: 100%;
+}
+
+/* Make sure sidebar stays fixed */
+.ant-layout-sider {
+  position: fixed !important;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1001;
+}
+
+/* Content area */
+.site-layout .ant-layout-content {
+  margin-top: 24px;
+  min-height: calc(100vh - 112px);
+}
+
+/* Header title */
+.header-left h2 {
+  margin: 0;
+  padding-left: 12px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .site-layout {
+    margin-left: 0 !important;
+  }
+  
+  .username {
+    display: none;
+  }
+  
+  .header-left h2 {
+    font-size: 18px;
+  }
+  
+  .trigger {
+    padding: 0 15px;
+  }
+
+  .header-container {
+    padding-right: 16px;
+  }
+}
+
+/* Dropdown menu styles */
+.ant-dropdown-menu {
+  padding: 4px 0;
+}
+
+.ant-dropdown-menu-item {
+  padding: 8px 16px !important;
+}
+
+.ant-dropdown-menu-item:hover {
+  background-color: #f5f5f5;
+}
+
+/* Animation for sidebar collapse */
+.ant-layout-sider {
+  transition: all 0.2s !important;
+}
+
+.ant-layout-sider-collapsed {
+  width: 80px !important;
+  min-width: 80px !important;
+  max-width: 80px !important;
+}

@@ -1,0 +1,22 @@
+.check-in-container {
+  padding: 24px;
+}
+
+.search-form {
+  margin-bottom: 24px;
+}
+
+.search-button {
+  display: flex;
+  align-items: flex-end;
+}
+
+@media (max-width: 768px) {
+  .check-in-container {
+    padding: 16px;
+  }
+  
+  .search-button {
+    margin-top: 16px;
+  }
+}

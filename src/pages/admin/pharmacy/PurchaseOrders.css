@@ -1,0 +1,63 @@
+.purchase-orders-container {
+  padding: 24px;
+}
+
+.table-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.items-table {
+  margin: 16px 0;
+}
+
+.total-amount {
+  text-align: right;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.status-tag {
+  text-transform: uppercase;
+}
+
+.notes-section {
+  margin-top: 24px;
+  background: #fafafa;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+/* Modal styles */
+.ant-modal-body {
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .purchase-orders-container {
+    padding: 16px;
+  }
+
+  .ant-table {
+    overflow-x: auto;
+  }
+
+  .ant-space {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .ant-space-item {
+    margin-right: 0 !important;
+  }
+}

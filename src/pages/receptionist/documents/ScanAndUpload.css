@@ -1,0 +1,63 @@
+.scan-and-upload {
+  padding: 24px;
+}
+
+.action-buttons {
+  margin-bottom: 24px;
+}
+
+.ant-upload-select {
+  width: 100%;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+.ant-space-item .anticon {
+  font-size: 16px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.ant-tag {
+  min-width: 60px;
+  text-align: center;
+}
+
+.preview-modal {
+  text-align: center;
+}
+
+.preview-modal img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .scan-and-upload {
+    padding: 16px;
+  }
+
+  .ant-card-head {
+    padding: 0 16px;
+  }
+
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  .action-buttons {
+    margin-bottom: 16px;
+  }
+} 

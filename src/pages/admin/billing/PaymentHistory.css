@@ -1,0 +1,78 @@
+.payment-history-container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.statistics-card {
+  margin-bottom: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-card {
+  margin-bottom: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-statistic {
+  text-align: center;
+}
+
+.ant-statistic-title {
+  color: #8c8c8c;
+}
+
+.ant-table {
+  margin-top: 16px;
+}
+
+/* Print styles */
+@media print {
+  .payment-history-container {
+    padding: 0;
+    background: #fff;
+  }
+
+  .filter-card,
+  .ant-layout-sider,
+  .ant-layout-header,
+  .ant-btn {
+    display: none !important;
+  }
+
+  .statistics-card,
+  .table-card {
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .payment-history-container {
+    padding: 16px;
+  }
+
+  .ant-row {
+    flex-direction: column;
+  }
+
+  .ant-col {
+    margin-bottom: 16px;
+  }
+
+  .ant-statistic {
+    text-align: left;
+  }
+}

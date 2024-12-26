@@ -1,0 +1,42 @@
+.time-slots-container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h2 {
+  margin: 0;
+}
+
+.table-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-space {
+  gap: 8px !important;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .time-slots-container {
+    padding: 16px;
+  }
+  
+  .page-header {
+    margin-bottom: 16px;
+  }
+  
+  .ant-table {
+    overflow-x: auto;
+  }
+}

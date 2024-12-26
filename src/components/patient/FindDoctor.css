@@ -1,0 +1,63 @@
+.find-doctor-container {
+  padding: 24px;
+}
+
+.search-filters {
+  margin-bottom: 24px;
+}
+
+.doctor-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #1890ff;
+}
+
+.doctor-rating {
+  font-size: 16px;
+  color: #faad14;
+}
+
+.doctor-description {
+  margin-top: 8px;
+  color: #666;
+}
+
+.ant-list-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 24px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-list-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.ant-avatar {
+  border: 2px solid #f0f0f0;
+}
+
+.ant-tag {
+  margin: 4px;
+}
+
+.ant-space {
+  gap: 8px !important;
+}
+
+@media (max-width: 768px) {
+  .find-doctor-container {
+    padding: 16px;
+  }
+
+  .ant-list-item {
+    padding: 16px !important;
+  }
+
+  .ant-avatar {
+    width: 80px !important;
+    height: 80px !important;
+  }
+}

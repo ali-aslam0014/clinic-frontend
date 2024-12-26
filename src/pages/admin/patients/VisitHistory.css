@@ -1,0 +1,39 @@
+.visit-history-container {
+  padding: 24px;
+}
+
+.visit-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.visit-details {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.prescription-item {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.lab-test-item {
+  margin-bottom: 16px;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.ant-descriptions-item-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ant-descriptions-item-content li {
+  margin-bottom: 8px;
+} 

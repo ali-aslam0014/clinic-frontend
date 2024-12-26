@@ -1,0 +1,21 @@
+.search-patient {
+  padding: 24px;
+}
+
+.ant-table-cell .ant-space {
+  gap: 8px;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .search-patient {
+    padding: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 16px;
+  }
+}

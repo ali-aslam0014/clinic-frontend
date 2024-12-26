@@ -1,0 +1,366 @@
+.appointments-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.appointments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.appointments-header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Card Styles */
+.appointments-table-card,
+.appointments-calendar-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.ant-card-head {
+  border-bottom: 2px solid #e8eaf6;
+  padding: 0 24px;
+}
+
+.ant-card-head-title {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-table-thead > tr > th {
+  background: #f0f2ff;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f6ff;
+}
+
+/* Calendar Styles */
+.appointments-calendar-card .ant-calendar {
+  border: none;
+  box-shadow: none;
+}
+
+.calendar-events {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.calendar-events li {
+  margin-bottom: 4px;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ant-badge-status-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.ant-badge-status-text {
+  font-size: 11px;
+  margin-left: 6px;
+}
+
+.ant-picker-calendar-full .ant-picker-panel {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-picker-calendar-date {
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.ant-picker-calendar-date:hover {
+  background: #f5f6ff;
+}
+
+.ant-picker-calendar-date-today {
+  border-color: #1a237e;
+}
+
+/* Tag Styles */
+.ant-tag {
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ant-tag-blue {
+  color: #1565c0;
+  background: #e3f2fd;
+  border-color: #90caf9;
+}
+
+.ant-tag-green {
+  color: #2e7d32;
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.ant-tag-red {
+  color: #c62828;
+  background: #ffebee;
+  border-color: #ef9a9a;
+}
+
+.ant-tag-processing {
+  color: #0288d1;
+  background: #e1f5fe;
+  border-color: #81d4fa;
+}
+
+/* Modal Styles */
+.ant-modal-header {
+  border-bottom: 2px solid #e8eaf6;
+  padding: 16px 24px;
+}
+
+.ant-modal-title {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-modal-footer {
+  border-top: 2px solid #e8eaf6;
+  padding: 16px 24px;
+}
+
+/* Form Styles */
+.ant-form-item-label > label {
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  border-radius: 6px;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover,
+.ant-picker:hover {
+  border-color: #1a237e;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus,
+.ant-picker-focused {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+}
+
+/* Button Styles */
+.ant-btn {
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+}
+
+.ant-btn-primary {
+  background: #1a237e;
+  border-color: #1a237e;
+}
+
+.ant-btn-primary:hover {
+  background: #283593;
+  border-color: #283593;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .appointments-container {
+    padding: 16px;
+  }
+
+  .appointments-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ant-card {
+    margin-bottom: 16px;
+  }
+
+  .calendar-events li {
+    font-size: 10px;
+  }
+
+  .ant-table {
+    font-size: 14px;
+  }
+
+  .ant-space {
+    gap: 8px !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .appointments-container {
+    background: #1f1f1f;
+  }
+
+  .appointments-header h2 {
+    color: #a6b1ff;
+  }
+
+  .ant-card {
+    background: #262626;
+  }
+
+  .ant-card-head {
+    border-color: #434343;
+  }
+
+  .ant-card-head-title {
+    color: #a6b1ff;
+  }
+
+  .ant-table-wrapper {
+    background: #262626;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #303030;
+    color: #a6b1ff;
+  }
+
+  .ant-table-tbody > tr:hover > td {
+    background: #303030;
+  }
+
+  .ant-picker-calendar-date:hover {
+    background: #303030;
+  }
+
+  .ant-modal-content {
+    background: #262626;
+  }
+
+  .ant-modal-header {
+    background: #262626;
+    border-color: #434343;
+  }
+
+  .ant-modal-footer {
+    border-color: #434343;
+  }
+
+  .ant-input,
+  .ant-select-selector,
+  .ant-picker {
+    background: #262626;
+    border-color: #434343;
+    color: #fff;
+  }
+
+  .ant-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.appointments-container {
+  animation: fadeIn 0.3s ease-out;
+}
+
+.ant-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Loading States */
+.ant-spin-nested-loading {
+  position: relative;
+}
+
+.ant-spin {
+  color: #1a237e;
+}
+
+/* Empty States */
+.ant-empty {
+  margin: 32px 0;
+}
+
+.ant-empty-description {
+  color: #666;
+}
+
+/* Print Styles */
+@media print {
+  .appointments-container {
+    padding: 0;
+  }
+
+  .appointments-header,
+  .ant-card-extra,
+  .ant-table-wrapper button,
+  .ant-pagination {
+    display: none;
+  }
+
+  .ant-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-tag {
+    border: 1px solid #000;
+    background: none !important;
+    color: #000 !important;
+  }
+}

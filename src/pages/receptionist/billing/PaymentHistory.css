@@ -1,0 +1,55 @@
+.payment-history {
+  padding: 24px;
+}
+
+.filters {
+  margin: 24px 0;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.ant-statistic {
+  text-align: center;
+}
+
+.receipt-preview {
+  padding: 20px;
+}
+
+.ant-table {
+  margin-top: 16px;
+}
+
+.ant-tag {
+  min-width: 70px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .payment-history {
+    padding: 16px;
+  }
+
+  .filters {
+    padding: 12px;
+  }
+
+  .ant-space {
+    gap: 8px !important;
+  }
+
+  .ant-statistic {
+    margin-bottom: 16px;
+  }
+}
+
+@media print {
+  .filters,
+  .ant-card-head,
+  .ant-pagination,
+  .ant-table-column-sorters,
+  .ant-table-filter-trigger {
+    display: none !important;
+  }
+} 

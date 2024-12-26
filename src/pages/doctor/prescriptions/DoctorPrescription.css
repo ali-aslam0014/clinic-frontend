@@ -1,0 +1,194 @@
+/* Container Styles */
+.prescription-container {
+  padding: 24px;
+}
+
+/* Card Styles */
+.ant-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* Prescription Details Styles */
+.prescription-details {
+  padding: 16px;
+}
+
+.prescription-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.prescription-header h2 {
+  margin: 0;
+  color: #1890ff;
+}
+
+.info-group {
+  margin-bottom: 16px;
+}
+
+.info-group label {
+  display: block;
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.info-group p {
+  margin: 0;
+  font-size: 14px;
+  color: #262626;
+}
+
+/* Medicine Card Styles */
+.medicine-card {
+  margin-bottom: 16px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.medicine-card .ant-card-body {
+  padding: 16px;
+}
+
+.medicine-card label {
+  color: #8c8c8c;
+  margin-right: 8px;
+  font-size: 13px;
+}
+
+.medicine-card span {
+  color: #262626;
+  font-size: 13px;
+}
+
+/* Section Styles */
+.diagnosis-section,
+.medicines-section,
+.notes-section,
+.dispensing-info {
+  margin: 24px 0;
+}
+
+.diagnosis-section h3,
+.medicines-section h3,
+.notes-section h3,
+.dispensing-info h3 {
+  color: #262626;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* Form Styles */
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+/* Modal Styles */
+.ant-modal-header {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.ant-modal-body {
+  padding: 24px;
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+}
+
+/* Tag Styles */
+.ant-tag {
+  min-width: 80px;
+  text-align: center;
+  font-weight: 500;
+}
+
+/* Button Styles */
+.ant-btn-dangerous {
+  color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.ant-btn-dangerous:hover {
+  color: #fff;
+  background: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+/* Print Styles */
+@media print {
+  .ant-layout-sider,
+  .ant-layout-header,
+  .ant-card-extra,
+  .ant-table-thead button,
+  .ant-pagination {
+    display: none !important;
+  }
+
+  .prescription-details {
+    padding: 0;
+  }
+
+  .ant-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  .ant-divider {
+    margin: 16px 0;
+  }
+
+  .medicine-card {
+    break-inside: avoid;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .prescription-container {
+    padding: 12px;
+  }
+
+  .ant-drawer {
+    width: 100% !important;
+  }
+
+  .ant-space {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ant-space-item {
+    margin-right: 0 !important;
+    margin-bottom: 8px;
+  }
+
+  .ant-form-item-control-input {
+    width: 100%;
+  }
+
+  .ant-picker {
+    width: 100%;
+  }
+
+  .medicine-card .ant-row {
+    margin: 0 !important;
+  }
+}

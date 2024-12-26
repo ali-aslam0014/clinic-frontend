@@ -1,0 +1,60 @@
+.print-receipt {
+  padding: 24px;
+}
+
+.receipt-content {
+  padding: 20px;
+  background: white;
+}
+
+.receipt-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.clinic-name {
+  margin-bottom: 8px !important;
+}
+
+.receipt-footer {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.total-row {
+  background-color: #fafafa;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  .receipt-content {
+    padding: 0;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-descriptions-item-label,
+  .ant-descriptions-item-content {
+    padding: 8px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .print-receipt {
+    padding: 16px;
+  }
+
+  .ant-descriptions-item-label,
+  .ant-descriptions-item-content {
+    padding: 8px;
+  }
+} 

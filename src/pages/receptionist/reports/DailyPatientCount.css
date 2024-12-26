@@ -1,0 +1,48 @@
+.daily-patient-count {
+  padding: 24px;
+}
+
+.report-filters {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.stats-cards {
+  margin-bottom: 24px;
+}
+
+.chart-card {
+  margin-bottom: 24px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.ant-statistic {
+  text-align: center;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .daily-patient-count {
+    padding: 16px;
+  }
+
+  .report-filters {
+    padding: 12px;
+  }
+
+  .ant-space {
+    gap: 8px !important;
+  }
+} 

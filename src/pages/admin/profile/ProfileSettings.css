@@ -1,0 +1,75 @@
+.admin-settings-container {
+  padding: 24px;
+}
+
+.settings-header {
+  margin-bottom: 24px;
+}
+
+.ant-card {
+  height: 100%;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ant-card-head-title .anticon {
+  color: #1890ff;
+}
+
+.settings-section {
+  margin-bottom: 24px;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.time-picker-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.working-days-select {
+  width: 100%;
+}
+
+.settings-alert {
+  margin-bottom: 16px;
+}
+
+.color-scheme-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.color-preview {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.settings-divider {
+  margin: 32px 0;
+}
+
+.settings-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+  .admin-settings-container {
+    padding: 16px;
+  }
+  
+  .ant-card {
+    margin-bottom: 16px;
+  }
+}

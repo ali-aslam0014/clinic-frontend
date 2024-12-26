@@ -1,0 +1,59 @@
+.upcoming-appointments-container {
+  padding: 24px;
+}
+
+.appointments-list {
+  margin-top: 16px;
+}
+
+.ant-list-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 20px !important;
+  transition: all 0.3s;
+  border: 1px solid #f0f0f0;
+}
+
+.ant-list-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 8px !important;
+}
+
+.ant-space {
+  gap: 8px !important;
+}
+
+.ant-badge {
+  margin-right: 8px;
+}
+
+.appointment-type-icon {
+  font-size: 24px;
+  margin-right: 8px;
+}
+
+.virtual-badge {
+  background-color: #1890ff;
+}
+
+.in-person-badge {
+  background-color: #52c41a;
+}
+
+@media (max-width: 768px) {
+  .upcoming-appointments-container {
+    padding: 16px;
+  }
+
+  .ant-list-item {
+    padding: 16px !important;
+  }
+
+  .ant-list-item-action {
+    margin-top: 16px;
+  }
+}

@@ -1,0 +1,240 @@
+/* Main Container */
+.reports-card {
+  margin: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Report Header */
+.report-header {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.report-header .ant-select,
+.report-header .ant-picker {
+  width: 100%;
+}
+
+/* Stats Row */
+.stats-row {
+  margin: 24px 0;
+}
+
+.stats-row .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stats-row .ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.stats-row .ant-statistic {
+  padding: 20px;
+}
+
+.stats-row .ant-statistic-title {
+  color: #8c8c8c;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.stats-row .ant-statistic-content {
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Report Content */
+.report-content {
+  margin-top: 24px;
+}
+
+/* Tabs */
+.report-tabs {
+  margin-top: 24px;
+}
+
+.report-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.report-tabs .ant-tabs-tab {
+  padding: 12px 24px;
+}
+
+.report-tabs .ant-tabs-tab-active {
+  background: #f5f5f5;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Charts */
+.chart-container {
+  height: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table {
+  margin: 16px 0;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+/* Tags */
+.ant-tag {
+  min-width: 70px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Export Button */
+.export-button {
+  margin-left: 16px;
+}
+
+/* Loading State */
+.loading-container {
+  padding: 48px;
+  text-align: center;
+}
+
+/* Empty State */
+.empty-state {
+  padding: 48px;
+  text-align: center;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* Chart Cards */
+.chart-card {
+  height: 100%;
+  min-height: 400px;
+}
+
+.chart-card .ant-card-head {
+  background: #fafafa;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.chart-card .ant-card-body {
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Print Styles */
+@media print {
+  .reports-card {
+    margin: 0;
+    box-shadow: none;
+  }
+
+  .report-header,
+  .export-button,
+  .ant-tabs-nav {
+    display: none;
+  }
+
+  .report-content {
+    margin-top: 0;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .reports-card {
+    margin: 12px;
+  }
+
+  .report-header {
+    padding-bottom: 16px;
+  }
+
+  .stats-row {
+    margin: 16px 0;
+  }
+
+  .stats-row .ant-statistic {
+    padding: 16px;
+  }
+
+  .chart-container {
+    height: 300px;
+  }
+
+  .ant-space {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ant-space-item {
+    margin-right: 0 !important;
+    margin-bottom: 8px;
+  }
+
+  .export-button {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.report-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Chart Tooltips */
+.chart-tooltip {
+  background: rgba(0, 0, 0, 0.75);
+  padding: 8px 12px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+/* Date Range Picker */
+.ant-picker-range {
+  width: 100%;
+}
+
+/* Select Dropdown */
+.ant-select-dropdown {
+  border-radius: 8px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+              0 6px 16px 0 rgba(0, 0, 0, 0.08),
+              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+} 

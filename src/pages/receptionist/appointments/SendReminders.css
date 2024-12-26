@@ -1,0 +1,33 @@
+.send-reminders {
+  padding: 24px;
+}
+
+.filters {
+  margin-bottom: 24px;
+}
+
+.reminder-stats {
+  margin-top: 24px;
+  text-align: right;
+}
+
+.reminder-sent {
+  background-color: #f6ffed;
+}
+
+.ant-badge-count {
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .send-reminders {
+    padding: 16px;
+  }
+  
+  .filters .ant-col {
+    margin-bottom: 16px;
+  }
+}

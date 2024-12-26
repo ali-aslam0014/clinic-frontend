@@ -1,0 +1,109 @@
+.calendar-view-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+  background: #f0f2f5;
+}
+
+.calendar-card {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.calendar-card .ant-card-body {
+  padding: 0;
+  min-height: 640px;
+}
+
+.custom-calendar {
+  background: #fff;
+  padding: 24px;
+}
+
+.custom-calendar .ant-picker-calendar-header {
+  padding: 12px 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.custom-calendar .ant-picker-panel {
+  border: none;
+}
+
+.custom-calendar .ant-picker-calendar-date {
+  min-height: 100px;
+  margin: 0;
+}
+
+.appointments-list {
+  margin: 0;
+  padding: 4px;
+  list-style: none;
+}
+
+.appointments-list li {
+  margin-bottom: 4px;
+  padding: 2px 4px;
+  font-size: 12px;
+  line-height: 1.5;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.appointments-list li:hover {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+/* Ensure calendar is always visible */
+.ant-picker-calendar {
+  display: block !important;
+}
+
+.ant-picker-calendar-full {
+  display: block !important;
+}
+
+.ant-picker-panel {
+  display: block !important;
+}
+
+/* Force calendar cells to maintain height */
+.ant-picker-cell {
+  min-height: 100px !important;
+}
+
+.ant-picker-calendar-date-content {
+  height: auto !important;
+  min-height: 80px !important;
+}
+
+/* Loading state */
+.ant-spin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 640px;
+}
+
+/* Ensure proper layout in DoctorLayout */
+.ant-layout-content {
+  min-height: 100vh !important;
+}
+
+/* Modal and Drawer styles */
+.ant-modal-body {
+  max-height: calc(100vh - 280px);
+  overflow-y: auto;
+}
+
+.appointment-details label {
+  color: #8c8c8c;
+  font-size: 12px;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.appointment-details p {
+  margin: 0;
+  color: #262626;
+  font-size: 14px;
+}

@@ -1,0 +1,35 @@
+.patient-history {
+  padding: 24px;
+}
+
+.ant-timeline-item-content h4 {
+  margin-bottom: 8px;
+  color: #1890ff;
+}
+
+.ant-timeline-item-content p {
+  margin-bottom: 4px;
+}
+
+.ant-timeline-item-content small {
+  color: #666;
+}
+
+.ant-tabs-tab {
+  padding: 12px 16px !important;
+}
+
+.ant-table-thead > tr > th {
+  background: #f5f5f5;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .patient-history {
+    padding: 16px;
+  }
+  
+  .ant-tabs-tab {
+    padding: 8px 12px !important;
+  }
+}

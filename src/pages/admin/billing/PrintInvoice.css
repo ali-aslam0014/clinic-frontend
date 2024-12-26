@@ -1,0 +1,123 @@
+.print-invoice-container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.invoice-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.action-buttons {
+  margin-bottom: 16px;
+}
+
+.company-logo {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.company-info {
+  margin-bottom: 24px;
+}
+
+.invoice-details {
+  text-align: right;
+}
+
+.patient-details {
+  margin: 24px 0;
+}
+
+.invoice-items {
+  margin: 24px 0;
+}
+
+.invoice-summary {
+  margin: 24px 0;
+}
+
+.invoice-notes {
+  margin: 24px 0;
+}
+
+.invoice-footer {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 50px;
+}
+
+.error-container {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Print styles */
+@media print {
+  .print-invoice-container {
+    padding: 0;
+    background: #fff;
+  }
+
+  .invoice-card {
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .no-print,
+  .ant-layout-sider,
+  .ant-layout-header {
+    display: none !important;
+  }
+
+  .ant-card {
+    border: none;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #fff !important;
+  }
+
+  .invoice-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+  }
+
+  /* Force page break between invoices when printing multiple */
+  .print-invoice-container {
+    page-break-after: always;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .print-invoice-container {
+    padding: 16px;
+  }
+
+  .invoice-details {
+    text-align: left;
+    margin-top: 24px;
+  }
+
+  .ant-descriptions-item {
+    padding-bottom: 8px;
+  }
+
+  .invoice-summary .ant-col {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+}

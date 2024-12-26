@@ -1,0 +1,58 @@
+.sms-email-reminders {
+  padding: 24px;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+.ant-space-item .anticon {
+  font-size: 16px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.ant-switch {
+  min-width: 44px;
+}
+
+.ant-tag {
+  min-width: 80px;
+  text-align: center;
+}
+
+.template-preview {
+  margin-top: 16px;
+  padding: 16px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.template-variables {
+  margin-top: 8px;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .sms-email-reminders {
+    padding: 16px;
+  }
+
+  .ant-card-head {
+    padding: 0 16px;
+  }
+
+  .ant-card-body {
+    padding: 16px;
+  }
+} 

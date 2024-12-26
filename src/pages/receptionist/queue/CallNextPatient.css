@@ -1,0 +1,68 @@
+.call-next-patient {
+  padding: 24px;
+}
+
+.doctor-select {
+  margin-bottom: 24px;
+}
+
+.status-cards {
+  margin-bottom: 24px;
+}
+
+.current-patient-card,
+.next-patient-card {
+  height: 100%;
+}
+
+.queue-table {
+  margin-top: 24px;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 500;
+}
+
+.ant-badge-count {
+  background-color: #108ee9;
+  box-shadow: none;
+}
+
+.ant-tag {
+  min-width: 80px;
+  text-align: center;
+}
+
+.notification-buttons {
+  margin-top: 16px;
+}
+
+.notification-buttons .ant-btn {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .call-next-patient {
+    padding: 16px;
+  }
+  
+  .doctor-select {
+    margin-bottom: 16px;
+  }
+  
+  .status-cards {
+    margin-bottom: 16px;
+  }
+  
+  .ant-table {
+    font-size: 12px;
+  }
+  
+  .ant-space {
+    gap: 4px !important;
+  }
+  
+  .ant-btn {
+    padding: 4px 8px;
+  }
+}

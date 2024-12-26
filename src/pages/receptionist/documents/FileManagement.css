@@ -1,0 +1,72 @@
+.file-management {
+  padding: 24px;
+}
+
+.ant-card {
+  height: 100%;
+}
+
+.folder-tree {
+  min-height: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.ant-tree {
+  background: transparent;
+}
+
+.file-list {
+  min-height: 400px;
+}
+
+.breadcrumb {
+  margin-bottom: 16px;
+}
+
+.ant-table-row {
+  cursor: pointer;
+}
+
+.ant-table-row:hover {
+  background-color: #f5f5f5;
+}
+
+.file-icon {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.folder-icon {
+  color: #1890ff;
+}
+
+.file-actions {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.ant-table-row:hover .file-actions {
+  opacity: 1;
+}
+
+.search-upload {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .file-management {
+    padding: 16px;
+  }
+
+  .search-upload {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ant-input-search {
+    width: 100% !important;
+  }
+} 

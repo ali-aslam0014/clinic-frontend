@@ -1,0 +1,20 @@
+.layout {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.header {
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.content {
+  padding: 20px;
+}

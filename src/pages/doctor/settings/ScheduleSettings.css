@@ -1,0 +1,48 @@
+.schedule-settings-container {
+  padding: 24px;
+}
+
+.schedule-settings-container .ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.schedule-settings-container .ant-table {
+  margin-top: 24px;
+}
+
+.schedule-settings-container .ant-form-item-label {
+  font-weight: 500;
+}
+
+.schedule-settings-container .ant-switch {
+  background-color: #ff4d4f;
+}
+
+.schedule-settings-container .ant-switch-checked {
+  background-color: #52c41a;
+}
+
+.schedule-settings-container .ant-tag {
+  min-width: 80px;
+  text-align: center;
+}
+
+.schedule-settings-container .ant-divider-inner-text {
+  font-weight: 500;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .schedule-settings-container {
+    padding: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 16px;
+  }
+  
+  .ant-table {
+    overflow-x: auto;
+  }
+}

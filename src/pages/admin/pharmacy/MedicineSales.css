@@ -1,0 +1,56 @@
+.medicine-sales-container {
+  padding: 24px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.medicine-details {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.ant-table-summary {
+  font-weight: bold;
+  background: #fafafa;
+}
+
+.cart-total {
+  text-align: right;
+  margin: 16px 0;
+  font-size: 16px;
+}
+
+.recent-sales-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.sale-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sale-item:last-child {
+  border-bottom: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .medicine-sales-container {
+    padding: 16px;
+  }
+
+  .ant-row {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+
+  .ant-col {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+}

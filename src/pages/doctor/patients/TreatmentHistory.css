@@ -1,0 +1,60 @@
+.treatment-history-container {
+  padding: 24px;
+}
+
+.treatment-history-container .ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.treatment-details {
+  padding: 20px;
+}
+
+.treatment-details .ant-typography {
+  color: #1890ff;
+  margin-bottom: 16px;
+}
+
+.treatment-details p {
+  margin-bottom: 8px;
+}
+
+.treatment-details strong {
+  color: #262626;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.medication-list {
+  background: #f5f5f5;
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.medication-item {
+  background: white;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 1px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .treatment-history-container {
+    padding: 16px;
+  }
+  
+  .ant-table {
+    overflow-x: auto;
+  }
+  
+  .ant-space {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

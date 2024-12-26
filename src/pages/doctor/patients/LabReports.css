@@ -1,0 +1,67 @@
+.lab-reports-container {
+  padding: 24px;
+}
+
+.lab-reports-container .ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.lab-report-details {
+  padding: 16px;
+}
+
+.lab-report-details .section {
+  margin-bottom: 24px;
+}
+
+.lab-report-details .section-title {
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+.lab-report-details .parameter-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.lab-report-details .parameter-label {
+  font-weight: 500;
+  color: #262626;
+}
+
+.lab-report-details .attachment-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.lab-report-details .attachment-item {
+  padding: 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 768px) {
+  .lab-reports-container {
+    padding: 16px;
+  }
+  
+  .ant-table {
+    overflow-x: auto;
+  }
+  
+  .parameter-row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

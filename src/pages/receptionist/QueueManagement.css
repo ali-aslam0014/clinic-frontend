@@ -1,0 +1,25 @@
+.queue-management {
+  padding: 24px;
+}
+
+.queue-table {
+  margin-top: 24px;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .queue-management {
+    padding: 16px;
+  }
+  
+  .ant-statistic-content {
+    font-size: 20px;
+  }
+}

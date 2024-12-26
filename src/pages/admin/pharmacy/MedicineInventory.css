@@ -1,0 +1,38 @@
+.medicine-inventory-container {
+  padding: 24px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.ant-table-row-expand-icon-cell {
+  width: 48px;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .medicine-inventory-container {
+    padding: 16px;
+  }
+
+  .table-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .table-header .ant-input-affix-wrapper {
+    width: 100%;
+  }
+
+  .table-header .ant-btn {
+    width: 100%;
+  }
+}

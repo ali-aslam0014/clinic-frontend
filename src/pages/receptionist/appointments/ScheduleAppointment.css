@@ -1,0 +1,25 @@
+.schedule-appointment {
+  padding: 24px;
+}
+
+.ant-card-inner {
+  margin-bottom: 24px;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-divider {
+  margin: 24px 0;
+}
+
+@media (max-width: 768px) {
+  .schedule-appointment {
+    padding: 16px;
+  }
+  
+  .ant-card-inner {
+    margin-bottom: 16px;
+  }
+}

@@ -1,0 +1,23 @@
+.prescription-list-container {
+  padding: 24px;
+}
+
+.prescription-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+.ant-card-head-title .anticon {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .prescription-list-container {
+    padding: 16px;
+  }
+}

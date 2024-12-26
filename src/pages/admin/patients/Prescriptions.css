@@ -1,0 +1,311 @@
+.prescriptions-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.prescriptions-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.prescriptions-header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background: #f0f2ff;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f6ff;
+}
+
+/* Modal Styles */
+.prescription-details {
+  padding: 16px;
+}
+
+.medicine-item {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: #f8f9ff;
+  border-radius: 8px;
+  border: 1px solid #e8eaf6;
+}
+
+.medicine-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Description List Styles */
+.ant-descriptions {
+  margin-bottom: 24px;
+}
+
+.ant-descriptions-title {
+  color: #1a237e;
+}
+
+.ant-descriptions-item-label {
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #f5f6ff;
+}
+
+/* Form Styles */
+.ant-form-item-label > label {
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  border-radius: 6px;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover,
+.ant-picker:hover {
+  border-color: #1a237e;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus,
+.ant-picker-focused {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+}
+
+/* Button Styles */
+.ant-btn-primary {
+  background: #1a237e;
+  border-color: #1a237e;
+}
+
+.ant-btn-primary:hover {
+  background: #283593;
+  border-color: #283593;
+}
+
+.ant-btn-dashed {
+  color: #1a237e;
+  border-color: #1a237e;
+}
+
+.ant-btn-dashed:hover {
+  color: #283593;
+  border-color: #283593;
+}
+
+/* Tag Styles */
+.ant-tag-green {
+  color: #2e7d32;
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.ant-tag-blue {
+  color: #1565c0;
+  background: #e3f2fd;
+  border-color: #90caf9;
+}
+
+.ant-tag-red {
+  color: #c62828;
+  background: #ffebee;
+  border-color: #ef9a9a;
+}
+
+/* Divider Styles */
+.ant-divider {
+  color: #1a237e;
+  font-weight: 500;
+}
+
+/* Medicine List Styles */
+.ant-form-list-item {
+  background: #f8f9ff;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Print Styles */
+@media print {
+  .prescriptions-container {
+    padding: 0;
+  }
+
+  .prescriptions-header,
+  .ant-table-wrapper,
+  .ant-btn {
+    display: none;
+  }
+
+  .prescription-details {
+    padding: 20px;
+  }
+
+  .ant-modal-mask,
+  .ant-modal-wrap {
+    display: none;
+  }
+
+  .ant-modal {
+    position: static;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+  }
+
+  .ant-modal-content {
+    box-shadow: none;
+  }
+
+  .ant-modal-body {
+    padding: 0;
+  }
+
+  .medicine-item {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .prescriptions-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ant-form-list-item {
+    padding: 12px;
+  }
+
+  .ant-space {
+    flex-wrap: wrap;
+    gap: 8px !important;
+  }
+
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .ant-modal {
+    max-width: 100vw;
+    margin: 8px;
+  }
+
+  .medicine-item {
+    padding: 12px;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-view {
+    border: none;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-item-label,
+  .ant-descriptions-bordered .ant-descriptions-item-content {
+    padding: 8px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .prescriptions-container {
+    background: #1f1f1f;
+  }
+
+  .prescriptions-header h2 {
+    color: #a6b1ff;
+  }
+
+  .ant-table-wrapper {
+    background: #262626;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .ant-table-thead > tr > th {
+    background: #303030;
+    color: #a6b1ff;
+  }
+
+  .ant-table-tbody > tr:hover > td {
+    background: #303030;
+  }
+
+  .medicine-item {
+    background: #262626;
+    border-color: #303030;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-item-label {
+    background-color: #303030;
+  }
+
+  .ant-input,
+  .ant-select-selector,
+  .ant-picker {
+    background: #262626;
+    border-color: #434343;
+  }
+
+  .ant-input:hover,
+  .ant-select-selector:hover,
+  .ant-picker:hover {
+    border-color: #a6b1ff;
+  }
+
+  .ant-btn-primary {
+    background: #3f51b5;
+    border-color: #3f51b5;
+  }
+
+  .ant-btn-primary:hover {
+    background: #5c6bc0;
+    border-color: #5c6bc0;
+  }
+}
+
+/* Animation Styles */
+.ant-table-tbody > tr {
+  transition: all 0.3s ease;
+}
+
+.medicine-item {
+  transition: all 0.3s ease;
+}
+
+.medicine-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-btn {
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+}

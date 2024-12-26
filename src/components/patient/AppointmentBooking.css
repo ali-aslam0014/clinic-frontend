@@ -1,0 +1,51 @@
+.appointment-booking-card {
+  max-width: 800px;
+  margin: 24px auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-booking-card h2 {
+  text-align: center;
+  color: #1890ff;
+  margin-bottom: 24px;
+}
+
+.time-slots-group {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 8px;
+  width: 100%;
+}
+
+.time-slot-option {
+  text-align: center;
+  margin: 4px;
+  transition: all 0.3s;
+}
+
+.time-slot-option:hover {
+  transform: translateY(-2px);
+}
+
+.ant-radio-button-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+.ant-picker {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .appointment-booking-card {
+    margin: 16px;
+  }
+
+  .time-slots-group {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  }
+}

@@ -1,0 +1,49 @@
+.doctor-details-container {
+  padding: 24px;
+}
+
+.doctor-info-card {
+  height: 100%;
+}
+
+.doctor-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.doctor-avatar {
+  font-size: 64px;
+  margin-bottom: 16px;
+}
+
+.doctor-basic-info h2 {
+  margin: 0;
+  color: #1a237e;
+}
+
+.doctor-basic-info p {
+  color: #666;
+  margin: 8px 0;
+}
+
+.qualifications-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.qualifications-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.qualifications-list li:last-child {
+  border-bottom: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .doctor-details-container {
+    padding: 16px;
+  }
+}

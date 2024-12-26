@@ -1,0 +1,84 @@
+.patient-feedback-container {
+  padding: 24px;
+}
+
+.statistics-row {
+  margin-bottom: 24px;
+}
+
+.statistics-row .ant-card {
+  margin-bottom: 16px;
+}
+
+.filter-card {
+  margin-bottom: 24px;
+  background: #fafafa;
+  padding: 16px;
+}
+
+.ant-table-cell {
+  vertical-align: top;
+}
+
+.feedback-comment {
+  max-width: 300px;
+  white-space: pre-line;
+}
+
+.ant-rate {
+  font-size: 16px;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.rating-summary {
+  margin: 16px 0;
+}
+
+.rating-bar {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.rating-label {
+  width: 80px;
+}
+
+.rating-progress {
+  flex: 1;
+  margin: 0 16px;
+}
+
+.rating-count {
+  width: 50px;
+  text-align: right;
+}
+
+@media (max-width: 768px) {
+  .patient-feedback-container {
+    padding: 16px;
+  }
+
+  .ant-space {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ant-space-item {
+    margin-right: 0 !important;
+    margin-bottom: 8px;
+  }
+
+  .feedback-comment {
+    max-width: 200px;
+  }
+}

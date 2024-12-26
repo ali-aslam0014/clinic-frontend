@@ -1,0 +1,31 @@
+.my-appointments-container {
+  padding: 24px;
+}
+
+.appointments-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.appointments-card .ant-card-head-title {
+  font-size: 18px;
+  color: #1890ff;
+}
+
+.appointment-details {
+  padding: 16px;
+}
+
+.appointment-details p {
+  margin-bottom: 12px;
+}
+
+.appointment-details strong {
+  color: #1890ff;
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .my-appointments-container {
+    padding: 16px;
+  }
+}

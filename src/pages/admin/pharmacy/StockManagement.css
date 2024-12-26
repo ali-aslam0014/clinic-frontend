@@ -1,0 +1,51 @@
+.stock-management-container {
+  padding: 24px;
+}
+
+.ant-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.ant-statistic-title {
+  color: #8c8c8c;
+  font-size: 14px;
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.stock-history-table {
+  margin-top: 16px;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .stock-management-container {
+    padding: 16px;
+  }
+
+  .ant-row {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+
+  .ant-col {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .ant-card {
+    margin-bottom: 16px;
+  }
+}

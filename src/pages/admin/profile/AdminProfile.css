@@ -1,0 +1,71 @@
+.admin-profile-container {
+  padding: 24px;
+}
+
+.profile-card {
+  text-align: center;
+}
+
+.profile-avatar {
+  margin-bottom: 24px;
+}
+
+.avatar-uploader {
+  display: flex;
+  justify-content: center;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.ant-upload img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-info {
+  text-align: center;
+}
+
+.profile-details {
+  margin-top: 16px;
+  text-align: left;
+}
+
+.profile-details .anticon {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.password-form {
+  max-width: 400px;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.upload-progress {
+  margin-top: 16px;
+}
+
+@media (max-width: 768px) {
+  .admin-profile-container {
+    padding: 16px;
+  }
+
+  .ant-upload.ant-upload-select-picture-card {
+    width: 150px;
+    height: 150px;
+  }
+}

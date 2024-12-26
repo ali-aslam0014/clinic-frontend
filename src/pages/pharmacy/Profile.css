@@ -1,0 +1,134 @@
+/* Container Styles */
+.profile-container {
+  padding: 24px;
+}
+
+.profile-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image Section */
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.avatar-uploader {
+  margin-bottom: 16px;
+}
+
+.avatar-uploader .ant-upload {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px dashed #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.avatar-uploader .ant-upload:hover {
+  border-color: #1890ff;
+}
+
+.avatar-uploader img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-name {
+  margin: 16px 0 4px 0 !important;
+}
+
+/* Profile Details Section */
+.profile-details {
+  padding: 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.section-header h4 {
+  margin: 0;
+}
+
+/* Form Styles */
+.profile-form {
+  margin-top: 24px;
+}
+
+.profile-form .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.profile-form .ant-input-prefix {
+  color: rgba(0, 0, 0, 0.45);
+  margin-right: 8px;
+}
+
+/* Description List Styles */
+.ant-descriptions {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+/* Additional Info Section */
+.additional-info {
+  margin-top: 24px;
+}
+
+.additional-info .ant-card {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.additional-info .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.additional-info .ant-statistic {
+  text-align: center;
+}
+
+.additional-info .ant-statistic-title {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 14px;
+}
+
+.additional-info .ant-statistic-content {
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Button Styles */
+.ant-btn-link {
+  padding: 4px 0;
+}
+
+.ant-btn-link:hover {
+  background: transparent;
+  color: #40a9ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 12px;
+  }
+} 

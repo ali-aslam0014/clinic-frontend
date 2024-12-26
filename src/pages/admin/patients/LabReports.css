@@ -1,0 +1,327 @@
+.lab-reports-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.lab-reports-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.lab-reports-header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background: #f0f2ff;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f6ff;
+}
+
+/* Report Details Styles */
+.report-details {
+  padding: 16px;
+}
+
+.ant-descriptions {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-descriptions-bordered .ant-descriptions-view {
+  border: 1px solid #e8eaf6;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #f8f9ff;
+  font-weight: 500;
+}
+
+/* Tag Status Styles */
+.ant-tag {
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+}
+
+.ant-tag-green {
+  color: #2e7d32;
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.ant-tag-orange {
+  color: #ef6c00;
+  background: #fff3e0;
+  border-color: #ffcc80;
+}
+
+.ant-tag-red {
+  color: #c62828;
+  background: #ffebee;
+  border-color: #ef9a9a;
+}
+
+/* Form Styles */
+.ant-form-item-label > label {
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  border-radius: 6px;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover,
+.ant-picker:hover {
+  border-color: #1a237e;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus,
+.ant-picker-focused {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+}
+
+/* Upload Component Styles */
+.ant-upload-list {
+  margin-top: 8px;
+}
+
+.ant-upload-list-item {
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.ant-upload-list-item:hover {
+  background: #f5f6ff;
+}
+
+/* Button Styles */
+.ant-btn {
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ant-btn-primary {
+  background: #1a237e;
+  border-color: #1a237e;
+}
+
+.ant-btn-primary:hover {
+  background: #283593;
+  border-color: #283593;
+}
+
+.ant-btn > .anticon {
+  font-size: 16px;
+}
+
+/* Modal Styles */
+.ant-modal-header {
+  border-bottom: 2px solid #e8eaf6;
+  padding: 16px 24px;
+}
+
+.ant-modal-title {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-modal-footer {
+  border-top: 2px solid #e8eaf6;
+  padding: 16px 24px;
+}
+
+/* Animation Styles */
+.ant-table-tbody > tr,
+.ant-btn,
+.ant-upload-list-item {
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .lab-reports-container {
+    padding: 16px;
+  }
+
+  .lab-reports-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ant-table {
+    font-size: 14px;
+  }
+
+  .ant-space {
+    gap: 8px !important;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-view {
+    border: none;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-item-label,
+  .ant-descriptions-bordered .ant-descriptions-item-content {
+    padding: 8px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .lab-reports-container {
+    background: #1f1f1f;
+  }
+
+  .lab-reports-header h2 {
+    color: #a6b1ff;
+  }
+
+  .ant-table-wrapper {
+    background: #262626;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #303030;
+    color: #a6b1ff;
+  }
+
+  .ant-table-tbody > tr:hover > td {
+    background: #303030;
+  }
+
+  .ant-descriptions {
+    background: #262626;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-view {
+    border-color: #434343;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-item-label {
+    background-color: #303030;
+    border-color: #434343;
+  }
+
+  .ant-input,
+  .ant-select-selector,
+  .ant-picker {
+    background: #262626;
+    border-color: #434343;
+    color: #fff;
+  }
+
+  .ant-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .ant-btn {
+    border-color: #434343;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .ant-modal-content {
+    background: #262626;
+  }
+
+  .ant-modal-header {
+    background: #262626;
+    border-color: #434343;
+  }
+
+  .ant-modal-title {
+    color: #a6b1ff;
+  }
+
+  .ant-modal-footer {
+    border-color: #434343;
+  }
+}
+
+/* Loading State Styles */
+.ant-spin-nested-loading {
+  position: relative;
+}
+
+.ant-spin {
+  color: #1a237e;
+}
+
+/* Empty State Styles */
+.ant-empty {
+  margin: 32px 0;
+}
+
+.ant-empty-description {
+  color: #666;
+}
+
+/* Error State Styles */
+.ant-result-error .ant-result-title {
+  color: #c62828;
+}
+
+/* Success State Styles */
+.ant-result-success .ant-result-title {
+  color: #2e7d32;
+}
+
+/* Print Styles */
+@media print {
+  .lab-reports-container {
+    padding: 0;
+  }
+
+  .lab-reports-header,
+  .ant-table-wrapper button,
+  .ant-pagination {
+    display: none;
+  }
+
+  .ant-table {
+    border: none;
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: #fff !important;
+    color: #000;
+  }
+
+  .ant-descriptions-bordered {
+    border: 1px solid #000;
+  }
+}

@@ -1,0 +1,184 @@
+/* Card Styling */
+.medicine-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.medicine-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+  background: #fafafa;
+  border-radius: 8px 8px 0 0;
+}
+
+.medicine-card .ant-card-head-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Table Styling */
+.ant-table-wrapper {
+  background: white;
+  border-radius: 8px;
+}
+
+.ant-table {
+  border-radius: 8px;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+/* Stock Tag Styling */
+.stock-tag {
+  min-width: 60px;
+  text-align: center;
+}
+
+.stock-tag.low {
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  color: #ff4d4f;
+}
+
+.stock-tag.normal {
+  background: #f6ffed;
+  border: 1px solid #b7eb8f;
+  color: #52c41a;
+}
+
+/* Search Input Styling */
+.search-input {
+  border-radius: 6px;
+  width: 250px;
+  margin: 0;
+}
+
+.search-input:hover, 
+.search-input:focus {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Modal Styling */
+.medicine-modal .ant-modal-content {
+  border-radius: 8px;
+}
+
+.medicine-modal .ant-modal-header {
+  border-radius: 8px 8px 0 0;
+  background: #fafafa;
+}
+
+.medicine-modal .ant-modal-body {
+  padding: 24px;
+}
+
+/* Form Styling */
+.medicine-form .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.medicine-form .ant-input,
+.medicine-form .ant-select-selector,
+.medicine-form .ant-picker {
+  border-radius: 6px;
+}
+
+.medicine-form .ant-input:hover,
+.medicine-form .ant-select-selector:hover,
+.medicine-form .ant-picker:hover {
+  border-color: #40a9ff;
+}
+
+/* Button Styling */
+.action-buttons .ant-btn {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-button {
+  background: #1890ff;
+  border-color: #1890ff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0;
+  height: 32px;
+}
+
+.add-button span,
+.add-button .anticon {
+  color: white !important;
+}
+
+.add-button:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.add-button:hover span,
+.add-button:hover .anticon {
+  color: white !important;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .action-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .search-input {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .add-button {
+    width: 100%;
+  }
+}
+
+/* Loading State */
+.loading-spinner {
+  margin: 20px 0;
+  padding: 30px 50px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+/* Empty State */
+.empty-state {
+  padding: 48px 0;
+  text-align: center;
+}
+
+/* Price Column */
+.price-column {
+  font-family: 'Roboto Mono', monospace;
+  text-align: right;
+}
+
+/* Expiry Date Warning */
+.expiry-warning {
+  color: #ff4d4f;
+}
+
+.expiry-normal {
+  color: #52c41a;
+}
+
+/* Tooltip Styling */
+.ant-tooltip-inner {
+  border-radius: 4px;
+} 

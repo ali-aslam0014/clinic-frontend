@@ -1,0 +1,65 @@
+.medicine-database-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+}
+
+.filter-row {
+  margin-bottom: 24px;
+}
+
+.ant-table-wrapper {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+.ant-space {
+  flex-wrap: wrap;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .medicine-database-container {
+    padding: 12px;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 8px !important;
+  }
+
+  .ant-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .ant-btn,
+  .filter-row {
+    display: none !important;
+  }
+
+  .medicine-database-container {
+    padding: 0;
+  }
+
+  .ant-card {
+    box-shadow: none;
+    border: none;
+  }
+}

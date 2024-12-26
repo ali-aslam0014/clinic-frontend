@@ -1,0 +1,67 @@
+.create-invoice-container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.invoice-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-divider {
+  margin: 24px 0;
+}
+
+.ant-table {
+  margin: 16px 0;
+}
+
+.ant-input-number {
+  width: 100%;
+}
+
+/* Print styles */
+@media print {
+  .ant-layout-sider,
+  .ant-layout-header,
+  .ant-btn,
+  .ant-form-item-label {
+    display: none !important;
+  }
+
+  .create-invoice-container {
+    padding: 0;
+    background: #fff;
+  }
+
+  .invoice-card {
+    box-shadow: none;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #fff !important;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .create-invoice-container {
+    padding: 16px;
+  }
+
+  .ant-row {
+    flex-direction: column;
+  }
+
+  .ant-col {
+    width: 100% !important;
+  }
+}

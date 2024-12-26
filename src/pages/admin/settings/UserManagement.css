@@ -1,0 +1,57 @@
+.user-management-container {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.ant-table-cell {
+  vertical-align: middle !important;
+}
+
+.user-status-badge {
+  margin-right: 8px;
+}
+
+.ant-badge-status-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.search-input {
+  margin-bottom: 16px;
+  max-width: 300px;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.role-tag {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.user-avatar {
+  background-color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .user-management-container {
+    padding: 16px;
+  }
+
+  .ant-table {
+    overflow-x: auto;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+}

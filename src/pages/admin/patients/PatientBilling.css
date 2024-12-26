@@ -1,0 +1,356 @@
+.patient-billing-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+.billing-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.billing-header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Statistics Cards Styles */
+.ant-row {
+  margin-bottom: 24px;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.ant-statistic {
+  padding: 8px;
+}
+
+.ant-statistic-title {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ant-statistic-content-value-decimal {
+  font-size: 18px;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-table-thead > tr > th {
+  background: #f0f2ff;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f6ff;
+}
+
+/* Status Tag Styles */
+.ant-tag {
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ant-tag-green {
+  color: #2e7d32;
+  background: #e8f5e9;
+  border-color: #a5d6a7;
+}
+
+.ant-tag-orange {
+  color: #ef6c00;
+  background: #fff3e0;
+  border-color: #ffcc80;
+}
+
+.ant-tag-red {
+  color: #c62828;
+  background: #ffebee;
+  border-color: #ef9a9a;
+}
+
+.ant-tag-blue {
+  color: #1565c0;
+  background: #e3f2fd;
+  border-color: #90caf9;
+}
+
+/* Modal Styles */
+.ant-modal-header {
+  border-bottom: 2px solid #e8eaf6;
+  padding: 16px 24px;
+}
+
+.ant-modal-title {
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.ant-modal-body {
+  padding: 24px;
+}
+
+.ant-modal-footer {
+  border-top: 2px solid #e8eaf6;
+  padding: 16px 24px;
+}
+
+/* Form Styles */
+.ant-form-item-label > label {
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-picker,
+.ant-input-number {
+  border-radius: 6px;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover,
+.ant-picker:hover,
+.ant-input-number:hover {
+  border-color: #1a237e;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus,
+.ant-picker-focused,
+.ant-input-number-focused {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+}
+
+/* Button Styles */
+.ant-btn {
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.ant-btn:hover {
+  transform: translateY(-1px);
+}
+
+.ant-btn-primary {
+  background: #1a237e;
+  border-color: #1a237e;
+}
+
+.ant-btn-primary:hover {
+  background: #283593;
+  border-color: #283593;
+}
+
+/* Bill Details Styles */
+.bill-details {
+  padding: 16px;
+}
+
+.ant-descriptions {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-descriptions-bordered .ant-descriptions-view {
+  border: 1px solid #e8eaf6;
+}
+
+.ant-descriptions-bordered .ant-descriptions-item-label {
+  background-color: #f8f9ff;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .patient-billing-container {
+    padding: 16px;
+  }
+
+  .billing-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .ant-statistic-title {
+    font-size: 12px;
+  }
+
+  .ant-statistic-content {
+    font-size: 20px;
+  }
+
+  .ant-table {
+    font-size: 14px;
+  }
+
+  .ant-space {
+    gap: 8px !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .patient-billing-container {
+    background: #1f1f1f;
+  }
+
+  .billing-header h2 {
+    color: #a6b1ff;
+  }
+
+  .ant-card {
+    background: #262626;
+  }
+
+  .ant-statistic-title {
+    color: rgba(255, 255, 255, 0.65);
+  }
+
+  .ant-statistic-content {
+    color: #fff;
+  }
+
+  .ant-table-wrapper {
+    background: #262626;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #303030;
+    color: #a6b1ff;
+  }
+
+  .ant-table-tbody > tr:hover > td {
+    background: #303030;
+  }
+
+  .ant-modal-content {
+    background: #262626;
+  }
+
+  .ant-modal-header {
+    background: #262626;
+    border-color: #434343;
+  }
+
+  .ant-modal-footer {
+    border-color: #434343;
+  }
+
+  .ant-input,
+  .ant-select-selector,
+  .ant-picker,
+  .ant-input-number {
+    background: #262626;
+    border-color: #434343;
+    color: #fff;
+  }
+
+  .ant-input::placeholder {
+    color: rgba(255, 255, 255, 0.45);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .patient-billing-container {
+    padding: 0;
+    background: #fff;
+  }
+
+  .billing-header,
+  .ant-row,
+  .ant-table-wrapper button,
+  .ant-pagination {
+    display: none;
+  }
+
+  .bill-details {
+    padding: 0;
+  }
+
+  .ant-descriptions {
+    border: 1px solid #000;
+  }
+
+  .ant-descriptions-bordered .ant-descriptions-item-label,
+  .ant-descriptions-bordered .ant-descriptions-item-content {
+    border-color: #000;
+  }
+
+  .ant-tag {
+    border: 1px solid #000;
+    background: none !important;
+    color: #000 !important;
+  }
+}
+
+/* Loading States */
+.ant-spin-nested-loading {
+  position: relative;
+}
+
+.ant-spin {
+  color: #1a237e;
+}
+
+/* Empty States */
+.ant-empty {
+  margin: 32px 0;
+}
+
+.ant-empty-description {
+  color: #666;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.ant-card,
+.ant-table-wrapper,
+.bill-details {
+  animation: fadeIn 0.3s ease-out;
+}

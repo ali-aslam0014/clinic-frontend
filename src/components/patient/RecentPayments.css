@@ -1,0 +1,61 @@
+.recent-payments-card {
+  margin-bottom: 24px;
+}
+
+.payments-list {
+  margin-top: 16px;
+}
+
+.ant-list-item {
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 20px !important;
+  transition: all 0.3s;
+  border: 1px solid #f0f0f0;
+}
+
+.ant-list-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 8px !important;
+}
+
+.ant-list-item-meta-title .amount {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.ant-space {
+  gap: 8px !important;
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+.payment-method {
+  font-size: 12px;
+  color: #8c8c8c;
+}
+
+.time-ago {
+  font-style: italic;
+  color: #8c8c8c;
+}
+
+@media (max-width: 768px) {
+  .ant-list-item {
+    padding: 16px !important;
+  }
+
+  .ant-list-item-action {
+    margin-top: 16px;
+  }
+
+  .ant-list-item-meta-title .amount {
+    font-size: 14px;
+  }
+}

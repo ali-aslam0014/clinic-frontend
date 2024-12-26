@@ -1,0 +1,84 @@
+.pending-appointments-container {
+  padding: 24px;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.pending-appointments-container h2 {
+  margin-bottom: 24px;
+}
+
+.statistics-row {
+  margin-bottom: 24px;
+}
+
+.statistics-row .ant-col {
+  margin-bottom: 16px;
+}
+
+.filters-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filters-section .ant-space {
+  width: 100%;
+}
+
+.appointment-details {
+  padding: 16px;
+}
+
+.modal-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ant-descriptions-bordered {
+  margin-bottom: 24px;
+}
+
+.ant-tag {
+  min-width: 70px;
+  text-align: center;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+}
+
+.ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}
+
+.table-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .pending-appointments-container {
+    padding: 16px;
+  }
+  
+  .filters-section {
+    padding: 12px;
+  }
+  
+  .statistics-row .ant-col {
+    margin-bottom: 12px;
+  }
+}

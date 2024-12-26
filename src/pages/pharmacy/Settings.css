@@ -1,0 +1,229 @@
+/* Container Styles */
+.settings-container {
+  padding: 24px;
+}
+
+.settings-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs Styles */
+.ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.ant-tabs-tab {
+  padding: 12px 24px !important;
+  transition: all 0.3s ease;
+}
+
+.ant-tabs-tab:hover {
+  color: #1890ff;
+}
+
+.ant-tabs-tab-active {
+  background: #f0f7ff;
+  border-radius: 8px 8px 0 0;
+}
+
+.ant-tabs-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Form Styles */
+.ant-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.ant-form-item {
+  margin-bottom: 24px;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+.ant-form-item-required::before {
+  display: none !important;
+}
+
+.ant-form-item-required::after {
+  display: inline-block;
+  margin-left: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+/* Input Styles */
+.ant-input,
+.ant-select-selector,
+.ant-picker {
+  border-radius: 6px !important;
+  border: 1px solid #d9d9d9 !important;
+  transition: all 0.3s ease !important;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover,
+.ant-picker:hover {
+  border-color: #40a9ff !important;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus,
+.ant-picker-focused {
+  border-color: #1890ff !important;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2) !important;
+}
+
+/* Switch Styles */
+.ant-switch {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.ant-switch-checked {
+  background-color: #1890ff;
+}
+
+/* Button Styles */
+.ant-btn {
+  border-radius: 6px;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+
+.ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+/* Number Input Styles */
+.ant-input-number {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 6px !important;
+}
+
+/* Time Picker Styles */
+.ant-picker-range {
+  width: 100%;
+}
+
+/* Alert Styles */
+.ant-alert {
+  margin-bottom: 24px;
+  border-radius: 6px;
+}
+
+/* Divider Styles */
+.ant-divider {
+  margin: 32px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 16px;
+  }
+
+  .ant-tabs-tab {
+    padding: 8px 16px !important;
+  }
+
+  .ant-form {
+    max-width: 100%;
+  }
+
+  .ant-picker-range {
+    width: 100%;
+  }
+}
+
+/* Animation Styles */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.settings-card {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Loading State Styles */
+.ant-btn-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Select Dropdown Styles */
+.ant-select-dropdown {
+  border-radius: 6px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+              0 6px 16px 0 rgba(0, 0, 0, 0.08),
+              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ant-select-item {
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.ant-select-item-option-selected {
+  background-color: #f0f7ff;
+}
+
+/* Time Zone Select Styles */
+.timezone-select .ant-select-selection-item {
+  font-family: monospace;
+}
+
+/* Form Validation Styles */
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-select-selector,
+.ant-form-item-has-error .ant-picker {
+  border-color: #ff4d4f !important;
+}
+
+.ant-form-item-has-error .ant-form-item-explain {
+  color: #ff4d4f;
+  margin-top: 4px;
+  font-size: 14px;
+}
+
+/* Print Styles */
+@media print {
+  .settings-container {
+    padding: 0;
+  }
+
+  .settings-card {
+    box-shadow: none;
+  }
+
+  .ant-tabs-nav {
+    display: none;
+  }
+} 

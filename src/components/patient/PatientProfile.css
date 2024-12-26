@@ -1,0 +1,51 @@
+.profile-container {
+  padding: 24px;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-image-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.ant-avatar {
+  border: 2px solid #f0f0f0;
+}
+
+.upload-button {
+  width: 100%;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.ant-divider-horizontal {
+  margin: 24px 0;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 16px;
+  }
+
+  .ant-avatar {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}

@@ -1,0 +1,108 @@
+.schedule-management-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+  background: #f0f2f5;
+}
+
+/* Card Styles */
+.ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  min-height: 64px;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* Time Slot Tags */
+.time-slot-tag {
+  margin: 4px 0;
+  padding: 4px 8px;
+}
+
+/* Form Styles */
+.ant-form-item-label {
+  padding-bottom: 4px;
+}
+
+.time-slots-container {
+  margin-bottom: 16px;
+}
+
+.time-slot-row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+/* Switch Styles */
+.ant-switch {
+  min-width: 60px;
+}
+
+/* Modal Styles */
+.ant-modal-body {
+  padding: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .schedule-management-container {
+    padding: 12px;
+  }
+
+  .ant-card-head {
+    padding: 0 12px;
+  }
+
+  .ant-card-head-title {
+    padding: 12px 0;
+  }
+
+  .ant-card-extra {
+    padding: 12px 0;
+  }
+
+  .time-slot-row {
+    flex-direction: column;
+  }
+
+  .ant-form-item {
+    margin-bottom: 12px;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .schedule-management-container {
+    background: #141414;
+  }
+
+  .ant-card {
+    background: #1f1f1f;
+  }
+
+  .ant-table {
+    background: #1f1f1f;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #1f1f1f !important;
+  }
+}

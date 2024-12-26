@@ -1,0 +1,66 @@
+.cancelled-appointments-container {
+  padding: 24px;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.table-container {
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.statistics-row {
+  margin-bottom: 24px;
+}
+
+.statistics-row .ant-col {
+  margin-bottom: 16px;
+}
+
+.filters-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-details {
+  padding: 16px;
+}
+
+.ant-descriptions-bordered {
+  background: #fff;
+}
+
+.ant-tag {
+  min-width: 70px;
+  text-align: center;
+}
+
+.ant-card {
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .cancelled-appointments-container {
+    padding: 16px;
+  }
+  
+  .filters-section {
+    padding: 12px;
+  }
+  
+  .statistics-row .ant-col {
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,27 @@
+.lab-report-detail {
+  padding: 24px;
+}
+
+.ant-descriptions {
+  margin-bottom: 24px;
+}
+
+.interpretation-card,
+.notes-card {
+  margin-top: 16px;
+}
+
+.ant-divider {
+  margin: 24px 0;
+}
+
+.critical-parameter {
+  color: #ff4d4f;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .lab-report-detail {
+    padding: 16px;
+  }
+}

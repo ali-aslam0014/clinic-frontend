@@ -1,0 +1,102 @@
+.add-patient-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.add-patient-container h2 {
+  color: #1a237e;
+  margin-bottom: 24px;
+  font-size: 24px;
+}
+
+.add-patient-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-section {
+  background: #f5f5f5;
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.form-section h3 {
+  color: #1a237e;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #e8eaf6;
+  padding-bottom: 8px;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-form-item-label > label {
+  color: #333;
+  font-weight: 500;
+}
+
+.ant-input,
+.ant-select-selector,
+.ant-input-number {
+  border-radius: 4px;
+}
+
+.ant-input:hover,
+.ant-select-selector:hover,
+.ant-input-number:hover {
+  border-color: #1a237e;
+}
+
+.ant-input:focus,
+.ant-select-selector:focus,
+.ant-input-number:focus {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+}
+
+.ant-btn-primary {
+  background: #1a237e;
+  border-color: #1a237e;
+}
+
+.ant-btn-primary:hover {
+  background: #283593;
+  border-color: #283593;
+}
+
+.upload-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .add-patient-form {
+    max-width: 100%;
+  }
+
+  .form-section {
+    padding: 16px;
+  }
+}
+
+.add-patient-card {
+  margin: 20px;
+}
+
+.add-patient-card h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #1890ff;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.ant-upload {
+  margin-bottom: 16px;
+}

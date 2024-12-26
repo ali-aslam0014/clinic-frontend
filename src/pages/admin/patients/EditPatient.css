@@ -1,0 +1,62 @@
+.edit-patient-container {
+  padding: 24px;
+}
+
+.edit-patient-container .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-patient-container .ant-card-head {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.edit-patient-container .ant-card-head-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1a237e;
+}
+
+.edit-patient-container .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.edit-patient-container .ant-input,
+.edit-patient-container .ant-select-selector,
+.edit-patient-container .ant-picker {
+  border-radius: 6px;
+}
+
+.edit-patient-container .ant-input:hover,
+.edit-patient-container .ant-select-selector:hover,
+.edit-patient-container .ant-picker:hover {
+  border-color: #1a237e;
+}
+
+.edit-patient-container .ant-input:focus,
+.edit-patient-container .ant-select-selector:focus,
+.edit-patient-container .ant-picker-focused {
+  border-color: #1a237e;
+  box-shadow: 0 0 0 2px rgba(26, 35, 126, 0.2);
+}
+
+.edit-patient-container .ant-btn-primary {
+  background: #1a237e;
+  border-color: #1a237e;
+}
+
+.edit-patient-container .ant-btn-primary:hover {
+  background: #283593;
+  border-color: #283593;
+}
+
+@media (max-width: 768px) {
+  .edit-patient-container {
+    padding: 16px;
+  }
+  
+  .ant-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

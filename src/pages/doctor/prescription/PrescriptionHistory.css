@@ -1,0 +1,154 @@
+.prescription-history-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+  background: #f0f2f5;
+}
+
+/* Filter Row */
+.filter-row {
+  margin-bottom: 24px;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+/* Badge Styles */
+.ant-badge-status-dot {
+  width: 8px;
+  height: 8px;
+}
+
+.ant-badge-status-text {
+  font-weight: 500;
+}
+
+/* Prescription Details */
+.prescription-details {
+  padding: 16px 0;
+}
+
+.diagnosis-notes,
+.test-instructions,
+.followup-notes {
+  display: block;
+  margin-top: 8px;
+}
+
+.medication-card,
+.test-card {
+  margin-bottom: 12px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.medication-card .ant-card-body,
+.test-card .ant-card-body {
+  padding: 12px;
+}
+
+/* Version History */
+.version-changes {
+  margin-top: 8px;
+  padding-left: 16px;
+}
+
+.change-item {
+  margin-bottom: 8px;
+  padding: 8px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.old-value {
+  color: #ff4d4f;
+  margin-right: 8px;
+}
+
+.new-value {
+  color: #52c41a;
+}
+
+/* Print Styles */
+@media print {
+  .prescription-history-container {
+    padding: 0;
+    background: #fff;
+  }
+
+  .filter-row,
+  .ant-table-pagination,
+  .ant-btn {
+    display: none !important;
+  }
+
+  .ant-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #fff !important;
+    color: #000;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .prescription-history-container {
+    padding: 12px;
+  }
+
+  .ant-drawer {
+    width: 100% !important;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 8px !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .prescription-history-container {
+    background: #141414;
+  }
+
+  .ant-card {
+    background: #1f1f1f;
+  }
+
+  .ant-table {
+    background: #1f1f1f;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #1f1f1f !important;
+  }
+
+  .change-item {
+    background: #262626;
+  }
+
+  .medication-card,
+  .test-card {
+    border-color: #303030;
+    background: #262626;
+  }
+}

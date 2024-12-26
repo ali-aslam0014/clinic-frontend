@@ -1,0 +1,97 @@
+.low-stock-list {
+  padding: 24px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.list-header p {
+  color: #666;
+  margin: 0;
+}
+
+.list-header .anticon {
+  margin-right: 8px;
+}
+
+.list-footer {
+  margin-top: 24px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Table Styles */
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f0f7ff;
+}
+
+/* Tag Styles */
+.ant-tag {
+  min-width: 70px;
+  text-align: center;
+  border-radius: 4px;
+}
+
+/* Search Input */
+.ant-input-affix-wrapper {
+  border-radius: 6px;
+}
+
+/* Button Styles */
+.ant-btn {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Badge Styles */
+.ant-badge {
+  margin-right: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .list-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .ant-space {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ant-input-affix-wrapper {
+    width: 100% !important;
+  }
+
+  .ant-btn {
+    width: 100%;
+  }
+}
+
+/* Animation */
+.low-stock-list {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 

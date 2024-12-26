@@ -1,0 +1,112 @@
+.dashboard-container {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 100vh;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.welcome-card {
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  border: none;
+}
+
+.welcome-content {
+  padding: 24px;
+  color: white;
+}
+
+.welcome-content h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+  color: white;
+}
+
+.welcome-content p {
+  margin: 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.quick-actions-section {
+  margin-bottom: 24px;
+}
+
+.action-card {
+  height: 100%;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.action-icon-wrapper {
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+.action-card h3 {
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.action-description {
+  color: rgba(0,0,0,0.45);
+  font-size: 14px;
+}
+
+.stats-section {
+  margin-bottom: 24px;
+}
+
+.stat-card {
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-3px);
+}
+
+.appointments-calendar-section {
+  margin-bottom: 24px;
+}
+
+.appointments-card {
+  height: 100%;
+}
+
+.calendar-card {
+  height: 100%;
+}
+
+.doctor-avatar {
+  font-size: 24px;
+  background: #f0f2f5;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+
+  .welcome-content {
+    padding: 16px;
+  }
+
+  .welcome-content h1 {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,25 @@
+.patient-detail {
+  padding: 24px;
+}
+
+.ant-descriptions-item-label {
+  font-weight: 500;
+}
+
+.ant-timeline-item-content p {
+  margin-bottom: 4px;
+}
+
+.ant-card-small .ant-card-body {
+  padding: 12px;
+}
+
+@media (max-width: 768px) {
+  .patient-detail {
+    padding: 16px;
+  }
+  
+  .ant-descriptions-item {
+    padding: 8px !important;
+  }
+}

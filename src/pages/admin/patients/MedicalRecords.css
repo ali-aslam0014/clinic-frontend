@@ -1,0 +1,79 @@
+.medical-records-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+.medical-records-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.medical-records-header h2 {
+  margin: 0;
+  color: #1a237e;
+  font-size: 24px;
+}
+
+.ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+.vital-signs-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.prescription-item,
+.lab-test-item {
+  border: 1px solid #f0f0f0;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.prescription-item:last-child,
+.lab-test-item:last-child {
+  margin-bottom: 0;
+}
+
+.attachment-list {
+  margin-top: 12px;
+}
+
+.attachment-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.attachment-item:last-child {
+  margin-bottom: 0;
+}
+
+.attachment-item .ant-space {
+  width: 100%;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .vital-signs-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .medical-records-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+}

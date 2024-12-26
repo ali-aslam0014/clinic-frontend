@@ -1,0 +1,160 @@
+/* Form Container */
+.add-medicine-form {
+  padding: 24px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+/* Form Items */
+.add-medicine-form .ant-form-item {
+  margin-bottom: 24px;
+}
+
+.add-medicine-form .ant-form-item-label {
+  padding-bottom: 8px;
+}
+
+.add-medicine-form .ant-form-item-label > label {
+  font-weight: 500;
+  color: #262626;
+}
+
+/* Input Styles */
+.add-medicine-form .ant-input,
+.add-medicine-form .ant-select-selector,
+.add-medicine-form .ant-picker,
+.add-medicine-form .ant-input-number {
+  border-radius: 6px;
+  border: 1px solid #d9d9d9;
+  transition: all 0.3s ease;
+}
+
+.add-medicine-form .ant-input:hover,
+.add-medicine-form .ant-select-selector:hover,
+.add-medicine-form .ant-picker:hover,
+.add-medicine-form .ant-input-number:hover {
+  border-color: #40a9ff;
+}
+
+.add-medicine-form .ant-input:focus,
+.add-medicine-form .ant-select-selector:focus,
+.add-medicine-form .ant-picker-focused,
+.add-medicine-form .ant-input-number-focused {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Input Number */
+.add-medicine-form .ant-input-number {
+  width: 100%;
+}
+
+/* Date Picker */
+.add-medicine-form .ant-picker {
+  width: 100%;
+}
+
+/* Upload */
+.add-medicine-form .ant-upload.ant-upload-select-picture-card {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.add-medicine-form .ant-upload-list-picture-card-container {
+  width: 150px;
+  height: 150px;
+}
+
+/* Description TextArea */
+.add-medicine-form .ant-input-textarea {
+  border-radius: 6px;
+}
+
+/* Buttons */
+.add-medicine-form .ant-btn {
+  height: 40px;
+  padding: 0 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-medicine-form .ant-btn-primary {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.add-medicine-form .ant-btn-primary:hover {
+  background: #40a9ff;
+  border-color: #40a9ff;
+}
+
+/* Divider */
+.add-medicine-form .ant-divider {
+  margin: 32px 0 24px;
+}
+
+/* Error States */
+.add-medicine-form .ant-form-item-has-error .ant-input,
+.add-medicine-form .ant-form-item-has-error .ant-select-selector,
+.add-medicine-form .ant-form-item-has-error .ant-picker {
+  border-color: #ff4d4f !important;
+}
+
+/* Loading State */
+.add-medicine-form .ant-btn-loading {
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.add-medicine-form {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .add-medicine-form {
+    padding: 16px;
+  }
+
+  .add-medicine-form .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .add-medicine-form .ant-upload.ant-upload-select-picture-card {
+    width: 120px;
+    height: 120px;
+  }
+
+  .add-medicine-form .ant-upload-list-picture-card-container {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .add-medicine-form {
+    padding: 0;
+  }
+
+  .add-medicine-form .ant-upload,
+  .add-medicine-form .ant-btn {
+    display: none;
+  }
+} 

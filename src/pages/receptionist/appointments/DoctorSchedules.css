@@ -1,0 +1,43 @@
+.doctor-schedules {
+  padding: 24px;
+}
+
+.schedule-content {
+  margin-top: 24px;
+}
+
+.date-cell {
+  padding: 4px;
+}
+
+.daily-schedule {
+  height: 100%;
+}
+
+.schedule-stats {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.loading-container {
+  text-align: center;
+  padding: 24px;
+}
+
+.ant-calendar-picker {
+  width: 100%;
+}
+
+.ant-badge {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .doctor-schedules {
+    padding: 16px;
+  }
+  
+  .schedule-content {
+    margin-top: 16px;
+  }
+}

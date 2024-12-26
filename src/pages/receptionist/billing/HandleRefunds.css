@@ -1,0 +1,55 @@
+.handle-refunds {
+  padding: 24px;
+}
+
+.payment-details {
+  margin-top: 24px;
+}
+
+.refund-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ant-descriptions {
+  margin-bottom: 24px;
+}
+
+.ant-table {
+  margin-top: 16px;
+}
+
+.ant-tag {
+  min-width: 70px;
+  text-align: center;
+}
+
+.refund-warning {
+  margin-bottom: 16px;
+  padding: 8px;
+  background-color: #fff2f0;
+  border: 1px solid #ffccc7;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .handle-refunds {
+    padding: 16px;
+  }
+  
+  .ant-descriptions-item-label,
+  .ant-descriptions-item-content {
+    padding: 8px !important;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .payment-details {
+    margin-top: 0;
+  }
+} 

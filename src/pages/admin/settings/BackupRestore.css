@@ -1,0 +1,72 @@
+.backup-restore-container {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.backup-info-card {
+  height: 100%;
+}
+
+.backup-progress {
+  margin: 16px 0;
+}
+
+.backup-alert {
+  margin-bottom: 16px;
+}
+
+.backup-note {
+  margin-top: 16px;
+  font-size: 14px;
+  color: #666;
+}
+
+.backup-size {
+  color: #1890ff;
+  font-weight: 500;
+}
+
+.backup-date {
+  color: #52c41a;
+}
+
+.backup-status {
+  text-transform: uppercase;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.upload-area {
+  border: 2px dashed #d9d9d9;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  background: #fafafa;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.upload-area:hover {
+  border-color: #1890ff;
+}
+
+.progress-info {
+  text-align: center;
+  margin-top: 8px;
+}
+
+@media (max-width: 768px) {
+  .backup-restore-container {
+    padding: 16px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+}

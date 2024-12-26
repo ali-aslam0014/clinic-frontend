@@ -1,0 +1,98 @@
+.calendar-container {
+  padding: 24px;
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.calendar-header {
+  margin-bottom: 24px;
+}
+
+.calendar-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-card .fc {
+  max-width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+  margin-bottom: 1.5em;
+}
+
+.fc .fc-button-primary {
+  background-color: #1890ff;
+  border-color: #1890ff;
+}
+
+.fc .fc-button-primary:hover {
+  background-color: #40a9ff;
+  border-color: #40a9ff;
+}
+
+.fc-event {
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.fc-event:hover {
+  opacity: 0.9;
+}
+
+.fc-timegrid-slot {
+  height: 40px !important;
+}
+
+.fc-timegrid-slot-label {
+  font-size: 12px;
+}
+
+.fc-day-today {
+  background-color: #e6f7ff !important;
+}
+
+.appointment-details {
+  padding: 16px;
+}
+
+/* Responsive fixes */
+@media (max-width: 768px) {
+  .calendar-container {
+    padding: 16px;
+  }
+  
+  .fc .fc-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .fc .fc-toolbar-title {
+    font-size: 1.2em;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .calendar-card {
+    background: #141414;
+  }
+  
+  .fc {
+    background: #141414;
+    color: #fff;
+  }
+  
+  .fc-theme-standard td, 
+  .fc-theme-standard th {
+    border-color: #303030;
+  }
+  
+  .fc-day-today {
+    background-color: #111b26 !important;
+  }
+}

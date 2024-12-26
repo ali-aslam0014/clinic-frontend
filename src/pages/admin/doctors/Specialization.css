@@ -1,0 +1,36 @@
+.specialization-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100%;
+}
+
+.specialization-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.specialization-header h2 {
+  margin: 0;
+  color: #1a237e;
+}
+
+.specialization-list {
+  margin-top: 24px;
+}
+
+.specialization-card {
+  margin-bottom: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.specialization-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.ant-form-item-label > label {
+  color: #333;
+  font-weight: 500;
+}

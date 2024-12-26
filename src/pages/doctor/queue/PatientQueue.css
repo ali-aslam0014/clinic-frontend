@@ -1,0 +1,124 @@
+.patient-queue-container {
+  padding: 24px;
+  min-height: calc(100vh - 64px);
+  background: #f0f2f5;
+}
+
+/* Card Styles */
+.ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  min-height: 64px;
+}
+
+/* Table Styles */
+.ant-table-wrapper {
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-row:hover {
+  cursor: pointer;
+}
+
+/* Token Badge */
+.token-badge {
+  background: #52c41a;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* Status Tags */
+.status-tag {
+  min-width: 100px;
+  text-align: center;
+}
+
+/* Consultation Drawer */
+.consultation-form {
+  padding: 24px;
+}
+
+.consultation-header {
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.patient-info {
+  margin-bottom: 24px;
+}
+
+.patient-info label {
+  color: #8c8c8c;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.patient-info p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .patient-queue-container {
+    padding: 12px;
+  }
+
+  .ant-drawer {
+    width: 100% !important;
+  }
+
+  .ant-table {
+    font-size: 12px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 8px !important;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .patient-queue-container {
+    background: #141414;
+  }
+
+  .ant-card {
+    background: #1f1f1f;
+  }
+
+  .ant-table {
+    background: #1f1f1f;
+  }
+
+  .ant-table-thead > tr > th {
+    background: #1f1f1f !important;
+  }
+
+  .patient-info label {
+    color: #8c8c8c;
+  }
+
+  .patient-info p {
+    color: #fff;
+  }
+}

@@ -1,0 +1,61 @@
+.sms-notifications-container {
+  padding: 24px;
+}
+
+.statistics-row {
+  margin-bottom: 24px;
+}
+
+.statistics-row .ant-card {
+  margin-bottom: 16px;
+}
+
+.action-card {
+  margin-bottom: 24px;
+  background: #fafafa;
+}
+
+.ant-table-cell {
+  vertical-align: top;
+}
+
+.message-cell {
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status-tag {
+  text-transform: uppercase;
+}
+
+.ant-statistic-title {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .sms-notifications-container {
+    padding: 16px;
+  }
+
+  .ant-space {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ant-space-item {
+    margin-right: 0 !important;
+    margin-bottom: 8px;
+  }
+
+  .message-cell {
+    max-width: 200px;
+  }
+}

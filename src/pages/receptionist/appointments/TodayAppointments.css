@@ -1,0 +1,39 @@
+.today-appointments {
+  padding: 24px;
+}
+
+.appointments-header {
+  margin-bottom: 24px;
+}
+
+.appointments-summary {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ant-badge-count {
+  min-width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 10px;
+}
+
+.ant-table-thead > tr > th {
+  background: #f5f5f5;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .today-appointments {
+    padding: 16px;
+  }
+  
+  .appointments-summary {
+    justify-content: flex-start;
+    margin-top: 16px;
+  }
+  
+  .ant-space {
+    flex-wrap: wrap;
+  }
+}

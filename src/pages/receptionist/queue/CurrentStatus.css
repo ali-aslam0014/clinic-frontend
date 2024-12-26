@@ -1,0 +1,47 @@
+.current-status {
+  padding: 24px;
+}
+
+.stats-row {
+  margin-bottom: 24px;
+}
+
+.stats-row .ant-card {
+  border-radius: 8px;
+}
+
+.queue-table .ant-table-thead > tr > th {
+  background: #f5f5f5;
+  font-weight: 500;
+}
+
+.queue-table .in-progress-row {
+  background-color: #e6f7ff;
+}
+
+.queue-table .high-priority-row {
+  background-color: #fff1f0;
+}
+
+.ant-badge-count {
+  background-color: #108ee9;
+  box-shadow: none;
+}
+
+.waiting-time {
+  color: #faad14;
+}
+
+@media (max-width: 768px) {
+  .current-status {
+    padding: 16px;
+  }
+  
+  .stats-row {
+    margin-bottom: 16px;
+  }
+  
+  .ant-table {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,32 @@
+.doctor-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 24px;
+}
+
+.notification-icon {
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+.avatar-dropdown {
+  cursor: pointer;
+}
+
+.doctor-name {
+  color: white;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .doctor-header {
+    padding-right: 0;
+  }
+  
+  .doctor-name {
+    display: none;
+  }
+}

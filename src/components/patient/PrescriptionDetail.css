@@ -1,0 +1,28 @@
+.prescription-detail {
+  padding: 24px;
+}
+
+.ant-descriptions {
+  margin-bottom: 24px;
+}
+
+.instructions-card,
+.next-visit-card {
+  margin-top: 16px;
+}
+
+.next-visit-card {
+  background-color: #f0f5ff;
+  border: 1px solid #d6e4ff;
+}
+
+.ant-divider {
+  margin: 24px 0;
+  color: #1890ff;
+}
+
+@media (max-width: 768px) {
+  .prescription-detail {
+    padding: 16px;
+  }
+}

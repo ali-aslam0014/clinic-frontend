@@ -1,0 +1,54 @@
+.generate-reports {
+  padding: 24px;
+}
+
+.filters {
+  margin-bottom: 24px;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+.ant-space-item .anticon {
+  font-size: 16px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.report-preview {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 16px;
+  background: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+}
+
+.ant-tag {
+  min-width: 80px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .generate-reports {
+    padding: 16px;
+  }
+
+  .ant-card-head {
+    padding: 0 16px;
+  }
+
+  .ant-card-body {
+    padding: 16px;
+  }
+
+  .filters {
+    margin-bottom: 16px;
+  }
+} 

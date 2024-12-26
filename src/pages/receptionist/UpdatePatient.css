@@ -1,0 +1,23 @@
+.update-patient {
+  padding: 24px;
+}
+
+.ant-divider {
+  margin: 16px 0;
+  color: #666;
+  font-weight: 500;
+}
+
+.ant-form-item-label {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .update-patient {
+    padding: 16px;
+  }
+  
+  .ant-col {
+    margin-bottom: 0;
+  }
+}

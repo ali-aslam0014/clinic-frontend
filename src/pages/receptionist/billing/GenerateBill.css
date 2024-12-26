@@ -1,0 +1,40 @@
+.generate-bill {
+  padding: 24px;
+}
+
+.bill-preview {
+  padding: 20px;
+}
+
+.ant-descriptions {
+  margin-bottom: 24px;
+}
+
+.ant-table-summary {
+  font-weight: 500;
+}
+
+.total-row {
+  font-weight: bold;
+  background-color: #fafafa;
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+  
+  .bill-preview {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .generate-bill {
+    padding: 16px;
+  }
+  
+  .ant-table {
+    font-size: 12px;
+  }
+} 

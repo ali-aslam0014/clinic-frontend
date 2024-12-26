@@ -1,0 +1,235 @@
+.patient-history-container {
+  padding: 24px;
+  background: #fff;
+}
+
+/* Card Styles */
+.ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  border-radius: 8px;
+}
+
+.ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 16px 24px;
+}
+
+/* Tabs Styles */
+.ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.ant-tabs-tab {
+  padding: 12px 0;
+}
+
+.ant-tabs-tab-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ant-tabs-tab-active {
+  font-weight: 500;
+}
+
+/* Form Styles */
+.history-form {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.form-section {
+  margin-bottom: 32px;
+}
+
+.form-section-title {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 16px;
+  color: #1890ff;
+}
+
+/* Timeline Styles */
+.history-timeline {
+  padding: 16px;
+}
+
+.timeline-item {
+  padding: 8px 0;
+}
+
+.timeline-date {
+  color: #8c8c8c;
+  font-size: 12px;
+}
+
+/* Table Styles */
+.history-table {
+  margin-top: 16px;
+}
+
+.history-table .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+/* Tag Styles */
+.status-tag {
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.status-active {
+  color: #52c41a;
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+.status-inactive {
+  color: #ff4d4f;
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+
+/* Drawer Styles */
+.history-drawer .ant-drawer-body {
+  padding: 24px;
+}
+
+.drawer-section {
+  margin-bottom: 24px;
+}
+
+.drawer-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #262626;
+}
+
+/* Alert Styles */
+.allergy-alert {
+  margin-bottom: 16px;
+  border-radius: 4px;
+}
+
+.alert-severe {
+  background: #fff1f0;
+  border-color: #ffa39e;
+}
+
+.alert-moderate {
+  background: #fffbe6;
+  border-color: #ffe58f;
+}
+
+.alert-mild {
+  background: #f6ffed;
+  border-color: #b7eb8f;
+}
+
+/* Button Styles */
+.action-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 16px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .patient-history-container {
+    padding: 16px;
+  }
+
+  .history-form {
+    max-width: 100%;
+  }
+
+  .ant-form-item {
+    margin-bottom: 16px;
+  }
+
+  .ant-tabs-tab {
+    padding: 8px 0;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .action-buttons button {
+    width: 100%;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .patient-history-container {
+    padding: 0;
+  }
+
+  .ant-tabs-nav {
+    display: none;
+  }
+
+  .ant-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  .action-buttons,
+  .add-button {
+    display: none;
+  }
+
+  .ant-table {
+    border: 1px solid #d9d9d9;
+  }
+
+  .ant-table-thead > tr > th {
+    background-color: #fafafa !important;
+  }
+}
+
+/* Animation Styles */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 200ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+}
+
+/* Custom Scrollbar */
+.history-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.history-container::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+.history-container::-webkit-scrollbar-thumb {
+  background: #d9d9d9;
+  border-radius: 3px;
+}
+
+.history-container::-webkit-scrollbar-thumb:hover {
+  background: #bfbfbf;
+}

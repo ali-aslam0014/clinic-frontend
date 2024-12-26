@@ -1,0 +1,45 @@
+.form-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f2f5;
+}
+
+.form-container form {
+  width: 400px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.form-container h2 {
+  color: #1a1a1a;
+  font-weight: 600;
+}
+
+.ant-form-item-label label {
+  font-weight: 500;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+}
+
+.form-container a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.form-container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  .form-container form {
+    width: 90%;
+    margin: 0 20px;
+  }
+}

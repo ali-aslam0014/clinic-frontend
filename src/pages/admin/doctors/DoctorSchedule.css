@@ -1,0 +1,99 @@
+.schedule-container {
+  padding: 24px;
+  background: #fff;
+  min-height: 100%;
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.schedule-header h2 {
+  margin: 0;
+  color: #1a237e;
+}
+
+.schedule-content {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: 1fr;
+}
+
+.schedule-calendar {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Calendar specific styles */
+.schedule-calendar .ant-picker-calendar {
+  width: 100%;
+}
+
+.schedule-calendar .ant-picker-calendar-header {
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-calendar .ant-picker-calendar-mini {
+  width: 100%;
+}
+
+.schedule-calendar .ant-picker-calendar-mini .ant-picker-calendar-date {
+  height: 24px;
+  padding: 4px 8px;
+}
+
+.schedule-calendar .ant-badge {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  font-size: 11px;
+}
+
+@media (min-width: 992px) {
+  .schedule-content {
+    grid-template-columns: 350px 1fr; /* Increased width for calendar */
+  }
+  
+  .schedule-calendar {
+    height: fit-content;
+    position: sticky;
+    top: 24px;
+  }
+}
+
+/* Make calendar more compact */
+.schedule-calendar .ant-picker-calendar-date-content {
+  height: auto !important;
+  line-height: 1.2;
+}
+
+.schedule-calendar .ant-picker-calendar-date {
+  margin: 0;
+  padding: 4px;
+}
+
+/* Fix calendar header alignment */
+.schedule-calendar .ant-picker-calendar-header .ant-picker-calendar-mode-switch {
+  display: none; /* Hide fullscreen switch if not needed */
+}
+
+.schedule-calendar .ant-picker-calendar-header .ant-radio-group {
+  margin-right: 8px;
+}
+
+/* Make badges more compact */
+.schedule-calendar .ant-badge {
+  padding: 2px 0;
+}
+
+.schedule-calendar .ant-badge-status-text {
+  font-size: 11px;
+}

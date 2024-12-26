@@ -1,0 +1,80 @@
+.pharmacy-dashboard {
+  padding: 24px;
+}
+
+.pharmacy-dashboard .ant-card {
+  margin-bottom: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.pharmacy-dashboard .ant-statistic-title {
+  font-size: 14px;
+}
+
+.pharmacy-dashboard .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pharmacy-dashboard .quick-actions {
+  margin-top: 16px;
+}
+
+.quick-actions {
+  margin: 24px 0;
+}
+
+.quick-action-card {
+  text-align: center;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.quick-action-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quick-action-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 12px;
+}
+
+.quick-action-content .anticon {
+  font-size: 32px;
+  transition: all 0.3s ease;
+}
+
+.quick-action-card:hover .anticon {
+  transform: scale(1.1);
+}
+
+.quick-action-content h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #262626;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .quick-actions {
+    margin: 16px 0;
+  }
+
+  .quick-action-content {
+    padding: 16px;
+  }
+
+  .quick-action-content .anticon {
+    font-size: 24px;
+  }
+
+  .quick-action-content h3 {
+    font-size: 14px;
+  }
+}

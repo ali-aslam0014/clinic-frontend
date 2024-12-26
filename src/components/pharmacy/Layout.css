@@ -1,0 +1,46 @@
+.pharmacy-logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-sider {
+  box-shadow: 2px 0 8px 0 rgba(29,35,41,.05);
+}
+
+.ant-layout-header {
+  background: #fff !important;
+  box-shadow: 0 1px 4px rgba(0,21,41,.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.ant-layout-content {
+  background: #f0f2f5;
+}
+
+/* For better responsiveness */
+@media screen and (max-width: 768px) {
+  .ant-layout-sider {
+    position: absolute !important;
+    z-index: 200;
+    height: 100vh;
+  }
+  
+  .ant-layout {
+    margin-left: 0 !important;
+  }
+}

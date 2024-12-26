@@ -1,0 +1,208 @@
+/* Container Styles */
+.new-sale-form {
+  padding: 24px;
+}
+
+.new-sale-form .ant-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search Section */
+.medicine-search {
+  margin-bottom: 24px;
+}
+
+.ant-select-auto-complete {
+  width: 100%;
+}
+
+/* Table Styles */
+.ant-table {
+  margin: 24px 0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f0f7ff;
+}
+
+/* Quantity Input */
+.ant-input-number {
+  width: 100px;
+}
+
+/* Customer Details Section */
+.customer-details {
+  margin-top: 24px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+/* Sale Summary Card */
+.sale-summary {
+  background: #f8f9fa;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.sale-summary .ant-card-body {
+  padding: 24px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0;
+  padding: 16px 0;
+  border-top: 1px solid #f0f0f0;
+}
+
+/* Payment Method Select */
+.ant-select {
+  width: 100%;
+}
+
+/* Action Buttons */
+.action-buttons {
+  margin-top: 24px;
+}
+
+.ant-btn {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.ant-btn-block {
+  margin-bottom: 12px;
+}
+
+/* Tags */
+.ant-tag {
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+/* AutoComplete Dropdown */
+.ant-select-dropdown {
+  border-radius: 8px;
+  box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+              0 6px 16px 0 rgba(0, 0, 0, 0.08),
+              0 9px 28px 8px rgba(0, 0, 0, 0.05);
+}
+
+.ant-select-item {
+  padding: 8px 12px;
+}
+
+.ant-select-item-option-active {
+  background-color: #f0f7ff;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.new-sale-form {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Loading States */
+.ant-btn-loading {
+  opacity: 0.7;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .new-sale-form {
+    padding: 16px;
+  }
+
+  .customer-details {
+    margin-top: 16px;
+    padding: 12px;
+  }
+
+  .sale-summary {
+    margin-top: 24px;
+  }
+
+  .ant-input-number {
+    width: 80px;
+  }
+
+  .summary-total {
+    padding: 12px 0;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .new-sale-form {
+    padding: 0;
+  }
+
+  .ant-card {
+    box-shadow: none;
+    border: none;
+  }
+
+  .ant-btn,
+  .ant-input-number-handler-wrap {
+    display: none;
+  }
+
+  .ant-table {
+    border: 1px solid #f0f0f0;
+  }
+}
+
+/* Error States */
+.ant-form-item-has-error .ant-input,
+.ant-form-item-has-error .ant-input-number {
+  border-color: #ff4d4f;
+}
+
+/* Success States */
+.ant-form-item-has-success .ant-input,
+.ant-form-item-has-success .ant-input-number {
+  border-color: #52c41a;
+}
+
+/* Hover Effects */
+.ant-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Focus States */
+.ant-input:focus,
+.ant-input-number-focused,
+.ant-select-focused .ant-select-selector {
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+} 
