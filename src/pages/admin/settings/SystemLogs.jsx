@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Table, Card, Tabs, DatePicker, Space, Select, Button, Tag } from 'antd';
 import { ReloadOutlined, DownloadOutlined } from '@ant-design/icons';
 import axiosInstance from '../../../utils/axiosConfig';
+import AdminLayout from '../../../components/admin/Layout';
 import './SystemLogs.css';
 
 const { TabPane } = Tabs;
@@ -145,72 +146,74 @@ const SystemLogs = () => {
   };
 
   return (
-    <div className="system-logs-container">
-      <Card title="System Logs" extra={
-        <Space>
-          <Button 
-            icon={<ReloadOutlined />} 
-            onClick={() => fetchLogs()}
-          >
-            Refresh
-          </Button>
-          <Button 
-            icon={<DownloadOutlined />} 
-            onClick={handleExport}
-          >
-            Export
-          </Button>
-        </Space>
-      }>
-        <div className="filters-section">
-          <Space size="large">
-            <Select
-              defaultValue="all"
-              style={{ width: 120 }}
-              onChange={(value) => handleFilterChange('type', value)}
+    <AdminLayout>
+      <div className="system-logs-container">
+        <Card title="System Logs" extra={
+          <Space>
+            <Button 
+              icon={<ReloadOutlined />} 
+              onClick={() => fetchLogs()}
             >
-              <Select.Option value="all">All Types</Select.Option>
-              <Select.Option value="user">User Activity</Select.Option>
-              <Select.Option value="security">Security</Select.Option>
-              <Select.Option value="audit">Audit Trail</Select.Option>
-            </Select>
-
-            <RangePicker
-              onChange={(dates) => handleFilterChange('dateRange', dates)}
-            />
+              Refresh
+            </Button>
+            <Button 
+              icon={<DownloadOutlined />} 
+              onClick={handleExport}
+            >
+              Export
+            </Button>
           </Space>
-        </div>
+        }>
+          <div className="filters-section">
+            <Space size="large">
+              <Select
+                defaultValue="all"
+                style={{ width: 120 }}
+                onChange={(value) => handleFilterChange('type', value)}
+              >
+                <Select.Option value="all">All Types</Select.Option>
+                <Select.Option value="user">User Activity</Select.Option>
+                <Select.Option value="security">Security</Select.Option>
+                <Select.Option value="audit">Audit Trail</Select.Option>
+              </Select>
 
-        <Tabs defaultActiveKey="user">
-          <TabPane tab="User Activity" key="user">
-            <Table
-              columns={userActivityColumns}
-              dataSource={logs.filter(log => log.type === 'user')}
-              loading={loading}
-              rowKey="id"
-            />
-          </TabPane>
+              <RangePicker
+                onChange={(dates) => handleFilterChange('dateRange', dates)}
+              />
+            </Space>
+          </div>
 
-          <TabPane tab="Security Logs" key="security">
-            <Table
-              columns={securityLogsColumns}
-              dataSource={logs.filter(log => log.type === 'security')}
-              loading={loading}
-              rowKey="id"
-            />
-          </TabPane>
+          <Tabs defaultActiveKey="user">
+            <TabPane tab="User Activity" key="user">
+              <Table
+                columns={userActivityColumns}
+                dataSource={logs.filter(log => log.type === 'user')}
+                loading={loading}
+                rowKey="id"
+              />
+            </TabPane>
 
-          <TabPane tab="Audit Trail" key="audit">
-            <Table
-              columns={auditTrailColumns}
-              dataSource={logs.filter(log => log.type === 'audit')}
-              loading={loading}
-              rowKey="id"
-            />
-          </TabPane>
-        </Tabs>
-      </Card>
-    </div>
+            <TabPane tab="Security Logs" key="security">
+              <Table
+                columns={securityLogsColumns}
+                dataSource={logs.filter(log => log.type === 'security')}
+                loading={loading}
+                rowKey="id"
+              />
+            </TabPane>
+
+            <TabPane tab="Audit Trail" key="audit">
+              <Table
+                columns={auditTrailColumns}
+                dataSource={logs.filter(log => log.type === 'audit')}
+                loading={loading}
+                rowKey="id"
+              />
+            </TabPane>
+          </Tabs>
+        </Card>
+      </div>
+    </AdminLayout>
   );
 };
 
