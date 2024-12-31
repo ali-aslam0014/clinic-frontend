@@ -307,7 +307,7 @@ const AdminLayout = ({ children }) => {
         <Link to="/admin/profile">My Profile</Link>
       </Menu.Item>
       <Menu.Item key="settings">
-        <Link to="/admin/profile/profilesettings">Settings</Link>
+        <Link to="/admin/profile/profile-settings">Settings</Link>
       </Menu.Item>
       <Menu.Divider />
       <Menu.Item 
