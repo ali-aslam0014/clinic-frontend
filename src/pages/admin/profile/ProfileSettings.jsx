@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   Card,
   Row,
@@ -12,9 +12,7 @@ import {
   message,
   Radio,
   TimePicker,
-  Input,
-  Space,
-  Alert
+  Space
 } from 'antd';
 import {
   SettingOutlined,
@@ -22,107 +20,34 @@ import {
   GlobalOutlined,
   ClockCircleOutlined,
   SecurityScanOutlined,
-  SaveOutlined,
-  MailOutlined
+  SaveOutlined
 } from '@ant-design/icons';
 import moment from 'moment';
-import axios from 'axios';
+import axiosInstance from '../../../utils/axiosConfig';
 import AdminLayout from '../../../components/admin/Layout';
+
 import './ProfileSettings.css';
 
-const { Title, Text } = Typography;
+const { Title } = Typography;
 const { Option } = Select;
 
 const ProfileSettings = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
-  const [settings, setSettings] = useState({
-    notifications: {
-      email: true,
-      system: true,
-      appointments: true,
-      updates: true
-    },
-    appearance: {
-      theme: 'light',
-      fontSize: 'medium',
-      colorScheme: 'blue'
-    },
-    system: {
-      language: 'en',
-      timeZone: 'UTC',
-      dateFormat: 'DD/MM/YYYY',
-      timeFormat: '24',
-      currency: 'USD'
-    },
-    security: {
-      twoFactorAuth: false,
-      sessionTimeout: 30,
-      passwordExpiry: 90,
-      loginAttempts: 5
-    },
-    workingHours: {
-      start: '09:00',
-      end: '17:00',
-      workingDays: ['monday', 'tuesday', 'wednesday', 'thursday', 'friday']
-    }
-  });
-
-  // Convert time string to moment object for TimePicker
-  const convertTimeToMoment = (timeStr) => {
-    return timeStr ? moment(timeStr, 'HH:mm') : null;
-  };
-
-  useEffect(() => {
-    fetchSettings();
-  }, []);
-
-  const fetchSettings = async () => {
-    try {
-      setLoading(true);
-      const token = localStorage.getItem('token');
-      const response = await axios.get('/api/v1/admin/profile/settings', {
-        headers: { 'Authorization': `Bearer ${token}` }
-      });
-      
-      if (response.data?.data) {
-        const settingsData = response.data.data;
-        // Convert time strings to moment objects for TimePicker
-        settingsData.workingHours.start = convertTimeToMoment(settingsData.workingHours.start);
-        settingsData.workingHours.end = convertTimeToMoment(settingsData.workingHours.end);
-        
-        setSettings(settingsData);
-        form.setFieldsValue(settingsData);
-      }
-    } catch (error) {
-      console.error('Error fetching settings:', error);
-      message.error('Failed to load settings');
-    } finally {
-      setLoading(false);
-    }
-  };
 
   const handleSettingsUpdate = async (values) => {
     try {
       setLoading(true);
-      
-      // Convert moment objects back to time strings
       const formattedValues = {
         ...values,
         workingHours: {
           ...values.workingHours,
-          start: values.workingHours.start ? values.workingHours.start.format('HH:mm') : null,
-          end: values.workingHours.end ? values.workingHours.end.format('HH:mm') : null,
+          start: values.workingHours?.start?.format('HH:mm'),
+          end: values.workingHours?.end?.format('HH:mm'),
         }
       };
-
-      const token = localStorage.getItem('token');
-      await axios.put('/api/v1/admin/profile/settings', formattedValues, {
-        headers: { 'Authorization': `Bearer ${token}` }
-      });
-      
+      await axiosInstance.put('/api/v1/admin/profile/profile-settings', formattedValues);
       message.success('Settings updated successfully');
-      setSettings(formattedValues);
     } catch (error) {
       console.error('Error updating settings:', error);
       message.error('Failed to update settings');
@@ -142,7 +67,6 @@ const ProfileSettings = () => {
           form={form}
           layout="vertical"
           onFinish={handleSettingsUpdate}
-          initialValues={settings}
         >
           <Row gutter={[24, 24]}>
             {/* Notifications Settings */}

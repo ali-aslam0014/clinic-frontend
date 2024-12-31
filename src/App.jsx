@@ -164,7 +164,7 @@ import BackupRestore from './pages/admin/settings/BackupRestore';
 
 //AdminProfile
 import AdminProfile from './pages/admin/profile/AdminProfile';
-import AdminProfileSettings from './pages/admin/profile/profile-settings';
+import ProfileSettings from './pages/admin/profile/ProfileSettings';
 import SystemLogs from './pages/admin/settings/SystemLogs';
 
 
@@ -345,7 +345,7 @@ const App = () => {
           <Route path="/admin/settings/roles" element={<RolesPermissions />} />
           <Route path="/admin/settings/backup" element={<BackupRestore />} />
           <Route path="/admin/profile" element={<AdminProfile />} />
-          <Route path="/admin/profile/profile-settings" element={<AdminProfileSettings />} />
+          <Route path="/admin/profile/profile-settings" element={<ProfileSettings />} />
           <Route path="/admin/settings/logs" element={<SystemLogs />} />
         </Route>
 

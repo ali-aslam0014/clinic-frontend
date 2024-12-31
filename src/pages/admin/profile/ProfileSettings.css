@@ -1,69 +1,106 @@
 .admin-settings-container {
-  padding: 24px;
+  padding: 32px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.settings-header {
-  margin-bottom: 24px;
+.admin-settings-container h2 {
+  margin-bottom: 32px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-settings-container h2 .anticon {
+  color: #1890ff;
+  font-size: 28px;
 }
 
 .ant-card {
   height: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.ant-card-head {
+  border-bottom: 2px solid #f0f0f0;
+  min-height: 60px;
 }
 
 .ant-card-head-title {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .ant-card-head-title .anticon {
   color: #1890ff;
+  font-size: 20px;
 }
 
-.settings-section {
-  margin-bottom: 24px;
+.ant-card-body {
+  padding: 24px;
 }
 
-.ant-form-item-label {
+.ant-form-item-label > label {
   font-weight: 500;
+  font-size: 15px;
+  color: #262626;
 }
 
-.time-picker-wrapper {
-  display: flex;
-  gap: 16px;
-}
-
-.working-days-select {
+.ant-select {
   width: 100%;
 }
 
-.settings-alert {
-  margin-bottom: 16px;
+.ant-radio-group {
+  width: 100%;
 }
 
-.color-scheme-option {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.ant-radio-button-wrapper {
+  width: 50%;
+  text-align: center;
 }
 
-.color-preview {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
+.ant-switch {
+  min-width: 50px;
 }
 
 .settings-divider {
-  margin: 32px 0;
+  margin: 40px 0;
 }
 
 .settings-actions {
   display: flex;
   justify-content: flex-end;
   gap: 16px;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
+.settings-actions .ant-btn {
+  height: 40px;
+  padding: 0 24px;
+  font-size: 15px;
+}
+
+/* Working Hours Card */
+.working-days-select {
+  width: 100%;
+}
+
+.ant-picker {
+  width: 100%;
+  height: 40px;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .admin-settings-container {
     padding: 16px;
@@ -71,5 +108,9 @@
   
   .ant-card {
     margin-bottom: 16px;
+  }
+  
+  .ant-card-head-title {
+    font-size: 16px;
   }
 }
