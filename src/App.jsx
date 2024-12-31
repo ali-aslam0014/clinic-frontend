@@ -345,7 +345,7 @@ const App = () => {
           <Route path="/admin/settings/roles" element={<RolesPermissions />} />
           <Route path="/admin/settings/backup" element={<BackupRestore />} />
           <Route path="/admin/profile" element={<AdminProfile />} />
-          <Route path="/admin/profile/ProfileSettings" element={<AdminProfileSettings />} />
+          <Route path="/admin/profile/profilesettings" element={<AdminProfileSettings />} />
           <Route path="/admin/settings/logs" element={<SystemLogs />} />
         </Route>
 
