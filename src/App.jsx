@@ -121,6 +121,7 @@ import ScanAndUpload from './pages/receptionist/documents/ScanAndUpload';
 import ReceptionistGenerateReports from './pages/receptionist/documents/GenerateReports';
 import ReceptionistFileManagement from './pages/receptionist/documents/FileManagement';
 
+
 // Pharmacy Dashboard
 import PharmacyDashboard from './pages/pharmacy/Dashboard';
 import Medicines from './pages/pharmacy/Medicines';
@@ -163,7 +164,8 @@ import BackupRestore from './pages/admin/settings/BackupRestore';
 
 //AdminProfile
 import AdminProfile from './pages/admin/profile/AdminProfile';
-import ProfileSettings from './pages/admin/profile/ProfileSettings';
+import AdminProfileSettings from './pages/admin/profile/ProfileSettings';
+import SystemLogs from './pages/admin/settings/SystemLogs';
 
 
 // Components
@@ -343,7 +345,8 @@ const App = () => {
           <Route path="/admin/settings/roles" element={<RolesPermissions />} />
           <Route path="/admin/settings/backup" element={<BackupRestore />} />
           <Route path="/admin/profile" element={<AdminProfile />} />
-          <Route path="/admin/profile/settings" element={<ProfileSettings />} />
+          <Route path="/admin/profile/ProfileSettings" element={<AdminProfileSettings />} />
+          <Route path="/admin/settings/logs" element={<SystemLogs />} />
         </Route>
 
         {/* Common Protected Route */}

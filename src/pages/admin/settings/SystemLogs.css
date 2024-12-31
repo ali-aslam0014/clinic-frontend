@@ -1,0 +1,64 @@
+.system-logs-container {
+  padding: 24px;
+}
+
+.system-logs-container .ant-card {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.filters-section {
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 4px;
+}
+
+.system-logs-container .ant-table {
+  background: white;
+  border-radius: 4px;
+}
+
+.system-logs-container .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.system-logs-container .ant-table-thead > tr > th {
+  background: #f7f7f7;
+  font-weight: 600;
+}
+
+.system-logs-container .ant-tag {
+  min-width: 70px;
+  text-align: center;
+}
+
+.system-logs-container .ant-space {
+  margin-bottom: 16px;
+}
+
+.system-logs-container .ant-btn {
+  display: flex;
+  align-items: center;
+}
+
+.system-logs-container .ant-btn .anticon {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .system-logs-container {
+    padding: 12px;
+  }
+
+  .filters-section .ant-space {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filters-section .ant-select,
+  .filters-section .ant-picker {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+} 
