@@ -1,22 +1,31 @@
 import axios from 'axios';
 
-const API_URL = 'https://myclinic-api.vercel.app';
+const API_URL = process.env.NODE_ENV === 'production'
+  ? 'https://myclinic-api.vercel.app'
+  : 'http://localhost:8080';
 
 const axiosInstance = axios.create({
     baseURL: API_URL,
     withCredentials: true,
-    timeout: 10000,  // 10 second timeout
+    timeout: 10000,
     headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        // Add CORS headers for production
+        'Access-Control-Allow-Origin': 'https://myclinic-app.vercel.app',
+        'Access-Control-Allow-Credentials': true
     }
 });
 
 // Request interceptor
 axiosInstance.interceptors.request.use(
     config => {
+        // Add timestamp to prevent caching
+        config.params = {
+            ...config.params,
+            _t: Date.now()
+        };
         console.log('Making request to:', config.baseURL + config.url);
-        console.log('Request data:', config.data);
         return config;
     },
     error => {
