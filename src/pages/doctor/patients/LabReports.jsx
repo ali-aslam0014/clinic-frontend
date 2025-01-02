@@ -13,7 +13,9 @@ import {
   Upload,
   message,
   Divider,
-  Typography
+  Typography,
+  Row,
+  Col
 } from 'antd';
 import {
   PlusOutlined,
@@ -215,7 +217,96 @@ const LabReports = () => {
             layout="vertical"
             onFinish={handleSubmit}
           >
-            {/* Form fields here */}
+            <Row gutter={16}>
+              <Col span={12}>
+                <Form.Item
+                  name="testName"
+                  label="Test Name"
+                  rules={[{ required: true, message: 'Please enter test name' }]}
+                >
+                  <Input placeholder="Enter test name" />
+                </Form.Item>
+              </Col>
+              <Col span={12}>
+                <Form.Item
+                  name="testCategory"
+                  label="Test Category"
+                  rules={[{ required: true, message: 'Please select category' }]}
+                >
+                  <Select placeholder="Select category">
+                    <Option value="Blood Test">Blood Test</Option>
+                    <Option value="Urine Test">Urine Test</Option>
+                    <Option value="X-Ray">X-Ray</Option>
+                    <Option value="MRI">MRI</Option>
+                    <Option value="CT Scan">CT Scan</Option>
+                    <Option value="Ultrasound">Ultrasound</Option>
+                  </Select>
+                </Form.Item>
+              </Col>
+            </Row>
+
+            <Row gutter={16}>
+              <Col span={12}>
+                <Form.Item
+                  name="testDate"
+                  label="Test Date"
+                  rules={[{ required: true, message: 'Please select test date' }]}
+                >
+                  <DatePicker style={{ width: '100%' }} />
+                </Form.Item>
+              </Col>
+              <Col span={12}>
+                <Form.Item
+                  name="reportDate"
+                  label="Report Date"
+                  rules={[{ required: true, message: 'Please select report date' }]}
+                >
+                  <DatePicker style={{ width: '100%' }} />
+                </Form.Item>
+              </Col>
+            </Row>
+
+            <Form.Item
+              name="status"
+              label="Status"
+              rules={[{ required: true, message: 'Please select status' }]}
+            >
+              <Select placeholder="Select status">
+                <Option value="Pending">Pending</Option>
+                <Option value="Completed">Completed</Option>
+                <Option value="Cancelled">Cancelled</Option>
+              </Select>
+            </Form.Item>
+
+            <Form.Item
+              name="results"
+              label="Test Results"
+              rules={[{ required: true, message: 'Please enter test results' }]}
+            >
+              <TextArea rows={4} placeholder="Enter test results" />
+            </Form.Item>
+
+            <Form.Item
+              name="remarks"
+              label="Remarks"
+            >
+              <TextArea rows={3} placeholder="Enter any additional remarks" />
+            </Form.Item>
+
+            <Form.Item>
+              <Space>
+                <Button type="primary" htmlType="submit">
+                  {selectedReport ? 'Update Report' : 'Add Report'}
+                </Button>
+                <Button onClick={() => {
+                  form.resetFields();
+                  setModalVisible(false);
+                  setSelectedReport(null);
+                }}>
+                  Cancel
+                </Button>
+              </Space>
+            </Form.Item>
           </Form>
         </Modal>
 
