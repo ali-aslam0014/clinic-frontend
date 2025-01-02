@@ -23,7 +23,7 @@ import {
   FilterOutlined
 } from '@ant-design/icons';
 import PharmacyLayout from '../../components/pharmacy/Layout';
-import axios from 'axios';
+import axiosInstance from '../../utils/axiosConfig';
 import moment from 'moment';
 import './Inventory.css';
 
@@ -49,13 +49,12 @@ const Inventory = () => {
   const fetchInventory = async () => {
     try {
       setLoading(true);
-      const token = localStorage.getItem('token');
-      const response = await axios.get('/api/v1/pharmacy/medicines', {
-        headers: { Authorization: `Bearer ${token}` }
-      });
+      const response = await axiosInstance.get('/api/v1/pharmacy/medicines');
+      console.log('Inventory response:', response.data);
       setInventory(response.data.data);
       calculateStats(response.data.data);
     } catch (error) {
+      console.error('Inventory fetch error:', error);
       message.error('Failed to fetch inventory data');
     } finally {
       setLoading(false);
