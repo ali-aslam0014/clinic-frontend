@@ -24,7 +24,7 @@ import {
   ExclamationCircleOutlined
 } from '@ant-design/icons';
 import PharmacyLayout from '../../components/pharmacy/Layout';
-import axios from 'axios';
+import axiosInstance from '../../utils/axiosConfig';
 import moment from 'moment';
 
 const { Option } = Select;
@@ -42,10 +42,7 @@ const Medicines = () => {
   const fetchMedicines = async () => {
     try {
       setLoading(true);
-      const token = localStorage.getItem('token');
-      const response = await axios.get('/api/v1/pharmacy/medicines', {
-        headers: { 'Authorization': `Bearer ${token}` }
-      });
+      const response = await axiosInstance.get('/api/v1/pharmacy/medicines');
       setMedicines(response.data.data);
     } catch (error) {
       message.error('Failed to fetch medicines');
@@ -135,10 +132,10 @@ const Medicines = () => {
       };
 
       if (editingMedicine) {
-        await axios.put(`/api/v1/pharmacy/medicines/${editingMedicine._id}`, values, config);
+        await axiosInstance.put(`/api/v1/pharmacy/medicines/${editingMedicine._id}`, values, config);
         message.success('Medicine updated successfully');
       } else {
-        await axios.post('/api/v1/pharmacy/medicines', values, config);
+        await axiosInstance.post('/api/v1/pharmacy/medicines', values, config);
         message.success('Medicine added successfully');
       }
 
@@ -170,7 +167,7 @@ const Medicines = () => {
       onOk: async () => {
         try {
           const token = localStorage.getItem('token');
-          await axios.delete(`/api/v1/pharmacy/medicines/${record._id}`, {
+          await axiosInstance.delete(`/api/v1/pharmacy/medicines/${record._id}`, {
             headers: { 'Authorization': `Bearer ${token}` }
           });
           message.success('Medicine deleted successfully');
@@ -206,7 +203,10 @@ const Medicines = () => {
               }}
               style={{ 
                 backgroundColor: '#1890ff',
-                borderColor: '#1890ff'
+                borderColor: '#1890ff',
+                fontSize:'16px',
+                fontWeight:'bold',
+                color:'#ffffff',
               }}
             >
               Add Medicine
