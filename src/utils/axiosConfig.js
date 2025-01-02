@@ -13,22 +13,19 @@ const axiosInstance = axios.create({
     timeout: 30000,
     headers: {
         'Content-Type': 'application/json',
-        'Accept': 'application/json'
+        'Accept': 'application/json',
+        'Origin': 'https://myclinic-app.vercel.app'
     }
 });
 
 // Request interceptor
 axiosInstance.interceptors.request.use(
     config => {
-        // Remove timestamp for now
         console.log('Making request to:', config.baseURL + config.url);
-        console.log('Request data:', config.data);
+        console.log('With headers:', config.headers);
         return config;
     },
-    error => {
-        console.error('Request error:', error);
-        return Promise.reject(error);
-    }
+    error => Promise.reject(error)
 );
 
 // Response interceptor
