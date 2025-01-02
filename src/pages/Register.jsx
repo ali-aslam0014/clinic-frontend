@@ -31,13 +31,20 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
+      console.log('Sending registration data:', formData);
       const res = await axiosInstance.post('/api/v1/user/register', formData)
+      
       if (res.data.success) {
         alert('Registration successful!')
         navigate('/login')
       }
     } catch (error) {
-      console.error('Registration error:', error)
+      console.error('Registration error:', {
+        message: error.message,
+        response: error.response?.data,
+        status: error.response?.status,
+        url: error.config?.url
+      });
       setError('Registration failed. Please try again.')
     }
   }
