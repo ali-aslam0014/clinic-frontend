@@ -32,6 +32,7 @@ import {
 import axios from 'axios';
 import moment from 'moment';
 import './Dashboard.css';
+import { useNavigate } from 'react-router-dom';
 
 const ReceptionistDashboard = () => {
   // States
@@ -42,6 +43,8 @@ const ReceptionistDashboard = () => {
   const [recentPatients, setRecentPatients] = useState([]);
   const [emergencyAlerts, setEmergencyAlerts] = useState([]);
   const [pendingTasks, setPendingTasks] = useState([]);
+
+  const navigate = useNavigate();
 
   // Quick Actions
   const quickActions = [
@@ -77,26 +80,30 @@ const ReceptionistDashboard = () => {
       title: "Today's Appointments",
       value: stats.todayAppointments || 0,
       icon: <CalendarOutlined />,
-      color: '#1890ff'
+      color: '#1890ff',
+      onClick: () => navigate('/receptionist/appointments/today')
     },
     {
       title: 'Patients in Queue',
       value: stats.queueCount || 0,
       icon: <TeamOutlined />,
-      color: '#52c41a'
+      color: '#52c41a',
+      onClick: () => navigate('/receptionist/queue')
     },
     {
       title: 'New Registrations',
       value: stats.newRegistrations || 0,
       icon: <UserAddOutlined />,
-      color: '#722ed1'
+      color: '#722ed1',
+      onClick: () => navigate('/receptionist/patient-registration')
     },
     {
       title: "Today's Revenue",
       value: stats.todayRevenue || 0,
       prefix: 'Rs.',
       icon: <DollarOutlined />,
-      color: '#faad14'
+      color: '#faad14',
+      onClick: () => navigate('/receptionist/billing')
     }
   ];
 
@@ -171,17 +178,21 @@ const ReceptionistDashboard = () => {
 
       {/* Statistics Section */}
       <Row gutter={[16, 16]} className="stats-section">
-        {statsCards.map((stat, index) => (
+        {statsCards.map((card, index) => (
           <Col xs={24} sm={12} md={6} key={index}>
-            <Card className="stat-card">
+            <Card 
+              className="stats-card" 
+              onClick={card.onClick}
+              style={{ cursor: 'pointer' }}
+            >
               <Statistic 
-                title={stat.title}
-                value={stat.value}
-                prefix={stat.prefix}
-                valueStyle={{ color: stat.color }}
+                title={card.title}
+                value={card.value}
+                prefix={card.prefix}
+                valueStyle={{ color: card.color }}
               />
-              <div className="stat-icon" style={{ color: stat.color }}>
-                {stat.icon}
+              <div className="stat-icon" style={{ color: card.color }}>
+                {card.icon}
               </div>
             </Card>
           </Col>
