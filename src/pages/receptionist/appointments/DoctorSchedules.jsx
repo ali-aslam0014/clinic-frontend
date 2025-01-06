@@ -21,7 +21,7 @@ import {
   TeamOutlined
 } from '@ant-design/icons';
 import moment from 'moment';
-import doctorAPI from '../../../services/doctorAPI';
+import axiosInstance from '../../../utils/axiosConfig';
 import './DoctorSchedules.css';
 
 const { Option } = Select;
@@ -49,10 +49,12 @@ const DoctorSchedules = () => {
   const fetchDoctors = async () => {
     try {
       setLoading(true);
-      const response = await doctorAPI.getAllDoctors();
-      setDoctors(response.data);
+      const response = await axiosInstance.get('/doctors');
+      setDoctors(response.data.data || []);
     } catch (error) {
+      console.error('Error fetching doctors:', error);
       message.error('Error fetching doctors: ' + error.message);
+      setDoctors([]);
     } finally {
       setLoading(false);
     }
@@ -62,13 +64,21 @@ const DoctorSchedules = () => {
     try {
       setLoading(true);
       const [scheduleRes, appointmentsRes] = await Promise.all([
-        doctorAPI.getDoctorSchedule(selectedDoctor, selectedDate.format('YYYY-MM-DD')),
-        doctorAPI.getDoctorAppointments(selectedDoctor, selectedDate.format('YYYY-MM-DD'))
+        axiosInstance.get(`/doctors/${selectedDoctor}/schedule`, {
+          params: { date: selectedDate.format('YYYY-MM-DD') }
+        }),
+        axiosInstance.get(`/doctors/${selectedDoctor}/appointments`, {
+          params: { date: selectedDate.format('YYYY-MM-DD') }
+        })
       ]);
-      setSchedules(scheduleRes.data);
-      setAppointments(appointmentsRes.data);
+      
+      setSchedules(scheduleRes.data.data || []);
+      setAppointments(appointmentsRes.data.data || []);
     } catch (error) {
+      console.error('Error fetching schedule:', error);
       message.error('Error fetching schedule: ' + error.message);
+      setSchedules([]);
+      setAppointments([]);
     } finally {
       setLoading(false);
     }
