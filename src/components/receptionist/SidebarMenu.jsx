@@ -283,12 +283,12 @@ const SidebarMenu = ({ collapsed }) => {
           label: 'Scan & Upload',
           path: '/receptionist/scan-upload'
         },
-        {
-          key: 'print-forms',
-          icon: <PrinterOutlined />,
-          label: 'Print Forms',
-          path: '/receptionist/print-forms'
-        },
+        // {
+        //   key: 'print-forms',
+        //   icon: <PrinterOutlined />,
+        //   label: 'Print Forms',
+        //   path: '/receptionist/print-forms'
+        // },
         {
           key: 'generate-reports',
           icon: <FileDoneOutlined />,
