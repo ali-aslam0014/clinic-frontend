@@ -22,7 +22,7 @@ import {
   PhoneOutlined
 } from '@ant-design/icons';
 import moment from 'moment';
-import appointmentAPI from '../../../services/appointmentAPI';
+import axiosInstance from '../../../utils/axiosConfig';
 import './TodayAppointments.css';
 
 const { Search } = Input;
@@ -39,10 +39,12 @@ const TodayAppointments = () => {
   const fetchTodayAppointments = async () => {
     try {
       setLoading(true);
-      const response = await appointmentAPI.getTodayAppointments();
-      setAppointments(response.data);
+      const response = await axiosInstance.get('/appointments/today');
+      setAppointments(response.data.data || []);
     } catch (error) {
+      console.error('Error fetching appointments:', error);
       message.error('Error fetching appointments: ' + error.message);
+      setAppointments([]);
     } finally {
       setLoading(false);
     }
@@ -50,19 +52,21 @@ const TodayAppointments = () => {
 
   const handleStatusChange = async (appointmentId, newStatus) => {
     try {
-      await appointmentAPI.updateAppointmentStatus(appointmentId, newStatus);
+      await axiosInstance.patch(`/appointments/${appointmentId}/status`, { status: newStatus });
       message.success('Appointment status updated successfully');
-      fetchTodayAppointments(); // Refresh list
+      fetchTodayAppointments();
     } catch (error) {
+      console.error('Error updating status:', error);
       message.error('Error updating status: ' + error.message);
     }
   };
 
   const handleSendReminder = async (appointmentId) => {
     try {
-      await appointmentAPI.sendAppointmentReminder(appointmentId);
+      await axiosInstance.post(`/appointments/${appointmentId}/reminder`);
       message.success('Reminder sent successfully');
     } catch (error) {
+      console.error('Error sending reminder:', error);
       message.error('Error sending reminder: ' + error.message);
     }
   };
