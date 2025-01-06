@@ -19,7 +19,7 @@ import {
   MedicineBoxOutlined,
   AlertOutlined
 } from '@ant-design/icons';
-import { appointmentAPI, doctorAPI } from '../../services/api';
+import axiosInstance from '../../utils/axiosConfig';
 import moment from 'moment';
 import './EmergencyRegistration.css';
 
@@ -36,12 +36,15 @@ const EmergencyRegistration = () => {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const response = await doctorAPI.getAvailableDoctors();
-        console.log('Available doctors:', response.data); // Debug log
-        setDoctors(response.data);
+        const response = await axiosInstance.get('/doctors/available');
+        console.log('API Response:', response);
+        
+        const doctorsList = response?.data?.data || [];
+        setDoctors(doctorsList);
       } catch (error) {
         console.error('Error fetching doctors:', error);
         message.error('Error fetching doctors: ' + error.message);
+        setDoctors([]);
       }
     };
     fetchDoctors();
