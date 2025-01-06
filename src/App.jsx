@@ -109,6 +109,7 @@ import WaitTimes from './pages/receptionist/queue/WaitTimes';
 import CallPatient from './pages/receptionist/queue/CallNextPatient';
 import GenerateBill from './pages/receptionist/billing/GenerateBill';
 import ProcessPayment from './pages/receptionist/billing/ProcessPayment';
+import PrintReceipt from './pages/receptionist/billing/PrintReceipt';
 import ReceptionistPaymentHistory from './pages/receptionist/billing/PaymentHistory';
 import HandleRefund from './pages/receptionist/billing/HandleRefunds';
 import DailyPatientCount from './pages/receptionist/reports/DailyPatientCount';
@@ -282,6 +283,7 @@ const App = () => {
             <Route path="call-next" element={<CallPatient />} />
             <Route path="generate-bill" element={<GenerateBill />} />
             <Route path="process-payment" element={<ProcessPayment />} />
+            <Route path="print-receipt" element={<PrintReceipt />} />
             <Route path="payment-history" element={<ReceptionistPaymentHistory />} />
             <Route path="refunds" element={<HandleRefund />} />
             <Route path="patient-count" element={<DailyPatientCount />} />
