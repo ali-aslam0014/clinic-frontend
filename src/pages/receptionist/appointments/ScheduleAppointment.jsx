@@ -21,8 +21,7 @@ import {
   ClockCircleOutlined
 } from '@ant-design/icons';
 import moment from 'moment';
-import appointmentAPI from '../../../services/appointmentAPI';
-import doctorAPI from '../../../services/doctorAPI';
+import axiosInstance from '../../../utils/axiosConfig';
 import './ScheduleAppointment.css';
 
 const { Option } = Select;
@@ -41,10 +40,12 @@ const ScheduleAppointment = () => {
 
   const fetchDoctors = async () => {
     try {
-      const response = await doctorAPI.getAllDoctors();
-      setDoctors(response.data);
+      const response = await axiosInstance.get('/doctors');
+      setDoctors(response.data.data || []);
     } catch (error) {
+      console.error('Error fetching doctors:', error);
       message.error('Error fetching doctors: ' + error.message);
+      setDoctors([]);
     }
   };
 
@@ -52,10 +53,17 @@ const ScheduleAppointment = () => {
     try {
       if (!doctorId || !date) return;
       
-      const response = await appointmentAPI.getAvailableSlots(doctorId, date.format('YYYY-MM-DD'));
-      setAvailableSlots(response.data);
+      const response = await axiosInstance.get(`/appointments/slots`, {
+        params: {
+          doctorId,
+          date: date.format('YYYY-MM-DD')
+        }
+      });
+      setAvailableSlots(response.data.data || []);
     } catch (error) {
+      console.error('Error fetching slots:', error);
       message.error('Error fetching available slots: ' + error.message);
+      setAvailableSlots([]);
     }
   };
 
@@ -87,11 +95,12 @@ const ScheduleAppointment = () => {
         }
       };
 
-      await appointmentAPI.createAppointment(appointmentData);
+      await axiosInstance.post('/appointments', appointmentData);
       message.success('Appointment scheduled successfully');
       form.resetFields();
       setAvailableSlots([]);
     } catch (error) {
+      console.error('Error scheduling appointment:', error);
       message.error('Error scheduling appointment: ' + error.message);
     } finally {
       setLoading(false);
