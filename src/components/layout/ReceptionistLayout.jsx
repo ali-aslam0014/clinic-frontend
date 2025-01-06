@@ -27,7 +27,7 @@ const ReceptionistLayout = () => {
 
   const profileMenu = (
     <Menu>
-      <Menu.Item key="profile" icon={<UserOutlined />} onClick={() => navigate('/receptionist/profile')}>
+      <Menu.Item key="profile" icon={<UserOutlined />} onClick={() => navigate('/receptionist/my-profile')}>
         My Profile
       </Menu.Item>
       <Menu.Item key="settings" icon={<SettingOutlined />} onClick={() => navigate('/receptionist/settings')}>

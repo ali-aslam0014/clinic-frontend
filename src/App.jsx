@@ -120,6 +120,8 @@ import SMSEmailReminders from './pages/receptionist/communication/SMSEmailRemind
 import ScanAndUpload from './pages/receptionist/documents/ScanAndUpload';
 import ReceptionistGenerateReports from './pages/receptionist/documents/GenerateReports';
 import ReceptionistFileManagement from './pages/receptionist/documents/FileManagement';
+import MyProfile from './pages/receptionist/profile/MyProfile';
+import Settings from './pages/receptionist/profile/Settings';
 
 
 // Pharmacy Dashboard
@@ -291,6 +293,8 @@ const App = () => {
             <Route path="scan-upload" element={<ScanAndUpload />} />
             <Route path="generate-reports" element={<ReceptionistGenerateReports />} />
             <Route path="file-management" element={<ReceptionistFileManagement />} />
+            <Route path="my-profile" element={<MyProfile />} />
+            <Route path="settings" element={<Settings />} />
           </Route>
         </Route>
 

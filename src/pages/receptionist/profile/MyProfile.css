@@ -1,0 +1,43 @@
+.profile-container {
+  padding: 24px;
+}
+
+.profile-header {
+  text-align: center;
+}
+
+.avatar-section {
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  margin-bottom: 16px;
+}
+
+.upload-button {
+  margin-top: 8px;
+}
+
+.profile-info {
+  margin-bottom: 24px;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 16px;
+  }
+
+  .profile-header {
+    margin-bottom: 24px;
+  }
+
+  .profile-actions {
+    margin-bottom: 16px;
+  }
+} 

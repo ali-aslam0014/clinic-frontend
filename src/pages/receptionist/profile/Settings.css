@@ -1,0 +1,37 @@
+.settings-container {
+  padding: 24px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.ant-list-item {
+  padding: 12px 0;
+}
+
+.ant-card {
+  height: 100%;
+}
+
+.ant-card-head-title {
+  display: flex;
+  align-items: center;
+}
+
+.ant-card-head-title .anticon {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .settings-container {
+    padding: 16px;
+  }
+  
+  .ant-card {
+    margin-bottom: 16px;
+  }
+} 
